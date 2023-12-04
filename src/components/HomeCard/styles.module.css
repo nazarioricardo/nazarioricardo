@@ -1,0 +1,14 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  max-width: 33%;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(var(--surface-rgb));
+  padding: var(--page-padding);
+}
