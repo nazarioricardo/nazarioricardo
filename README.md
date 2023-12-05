@@ -23,6 +23,8 @@ git clone https://github.com/nazarioricardo/nazarioricardo.git
 cd nazarioricardo
 # now
 npm install
+# or
+yarn install
 # and finally
 npm run dev
 # or
