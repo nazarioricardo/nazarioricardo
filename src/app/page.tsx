@@ -12,6 +12,10 @@ export default function Home() {
           Hello. I'm a software developer who loves creating joyful products
           that make life a little nicer for everyone.
         </p>
+        <p className={styles.bio}>
+          I've worked as a full stack and mobile developer for the past 6 years,
+          making products in the music, medical, and energy industries.
+        </p>
       </HomeCard>
     </main>
   );
