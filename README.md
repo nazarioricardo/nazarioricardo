@@ -29,6 +29,8 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Now you can start editing my page... I guess...
+Now you can start editing my page...
+
+Not really sure why you would do that... but sure.
 
 ![Sad Larry](larry-sad.gif)
