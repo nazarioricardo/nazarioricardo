@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 function Socials() {
   return (
-    <div className={styles.container}>
+    <ul className={styles.container}>
       <Item
         src={Instagram}
         link="https://www.instagram.com/ricrdo.n/"
@@ -24,7 +24,7 @@ function Socials() {
         link="https://github.com/nazarioricardo"
         alt="Ricardo Nazario Github"
       />
-    </div>
+    </ul>
   );
 }
 

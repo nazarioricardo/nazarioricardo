@@ -11,11 +11,11 @@ type ItemProps = {
 
 function Item({ src, link, alt }: ItemProps) {
   return (
-    <div className={styles.container}>
+    <li className={styles.container}>
       <a href={link} target="_blank">
-        <Image src={src} alt={alt} height={32} />
+        <Image src={src} alt={alt} height={48} />
       </a>
-    </div>
+    </li>
   );
 }
 
