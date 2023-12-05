@@ -8,7 +8,9 @@
   --foreground-rgb: 244, 244, 244;
   --background-rgb: 23, 23, 23;
   --surface-rgb: 56, 73, 75;
-  --page-padding: 88px 70px;
+  --padding-horizontal: 5.5rem;
+  --padding-vertical: 4.3rem;
+  --page-padding: var(--padding-horizontal) var(--padding-vertical);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +47,10 @@ h5,
 h6 {
   font-family: var(--font-jomolhari);
   font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 a {
