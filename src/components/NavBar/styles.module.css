@@ -1,0 +1,14 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(var(--surface-rgb));
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+}
