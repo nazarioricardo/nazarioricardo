@@ -21,6 +21,8 @@ It's a Next.js app so just follow these commands:
 git clone https://github.com/nazarioricardo/nazarioricardo.git
 # then
 cd nazarioricardo
+# now
+npm install
 # and finally
 npm run dev
 # or
