@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   height: 100vh;
-  max-width: 33%;
+  min-width: 33%;
+  max-width: 40%;
   border-top-right-radius: 100px;
   display: flex;
   flex-direction: column;
