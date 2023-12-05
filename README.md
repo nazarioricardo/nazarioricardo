@@ -4,7 +4,7 @@ You've reached my github page!
 
 It also happens to be the README for my personal website's repository.
 
-If you wanna run it locally (for some reason) skip a bit further down. Otherwise, read a bit about me.
+If you wanna run my site locally (for some reason) skip a bit further down. Otherwise, read a bit about me.
 
 ## A Bit About Me.
 
@@ -29,6 +29,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing my page... I guess...
+Now you can start editing my page... I guess...
 
 ![Sad Larry](larry-sad.gif)
