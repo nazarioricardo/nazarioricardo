@@ -1,4 +1,4 @@
-![using a color picker](https://tenor.com/Pneb.gif)
+![using a color picker](hi-hey.gif)
 
 ## Getting Started
 
