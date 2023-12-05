@@ -15,7 +15,7 @@ I like dumb jokes like that. I also like programming, and making nice things. I'
 ## Running My Website Locally
 
 It's pretty simple really...
-It's a Next.js app so just
+It's a Next.js app so just follow these commands:
 
 ```bash
 git clone https://github.com/nazarioricardo/nazarioricardo.git
