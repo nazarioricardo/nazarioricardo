@@ -1,15 +1,40 @@
 .project {
   height: 232px;
+  width: 100%;
+  border-radius: 65px;
+  display: flex;
   flex-direction: row;
+  gap: 54px;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 48px;
+
+  /* background-color: gray; */
+}
+
+.project:hover {
+  background-color: rgb(var(--hover-rgb));
 }
 
 .imageContainer {
   position: relative;
-  height: 175px;
-  width: 175px;
-  border-radius: 50%;
-  overflow: hidden;
-  object-fit: cover;
+  height: 100%;
+  width: 174px;
+  padding: 29px 0;
+}
+
+.content {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  padding: 48px 48px 48px 0;
+}
+
+.content > h3 {
+  padding-bottom: 36px;
+}
+
+.content > p {
+  font-size: 1.2rem;
 }
