@@ -1,0 +1,15 @@
+.project {
+  height: 232px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
