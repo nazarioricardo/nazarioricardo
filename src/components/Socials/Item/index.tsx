@@ -1,6 +1,4 @@
-import { ReactElement } from "react";
 import Image, { StaticImageData } from "next/image";
-import github from "github.png";
 import styles from "./styles.module.css";
 
 type ItemProps = {
