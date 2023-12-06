@@ -7,7 +7,7 @@
   border-top-right-radius: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   background-color: rgb(var(--surface-rgb));
   padding: var(--page-padding);

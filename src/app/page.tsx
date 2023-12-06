@@ -11,16 +11,18 @@ export default function Home() {
       <NavBar />
       <div className={styles.content}>
         <HomeCard>
-          <h1 className={styles.title}>Ricardo Nazario</h1>
-          <p className={styles.bio}>
-            Hello. I'm a software developer who loves creating joyful products
-            that make life a little nicer for everyone.
-          </p>
-          <p className={styles.bio}>
-            I've worked as a full stack and mobile developer for the past 6
-            years, making products in the music, medical, and energy industries.
-          </p>
-
+          <div>
+            <h1 className={styles.title}>Ricardo Nazario</h1>
+            <p className={styles.bio}>
+              Hello. I'm a software developer who loves creating joyful products
+              that make life a little nicer for everyone.
+            </p>
+            <p className={styles.bio}>
+              I've worked as a full stack and mobile developer for the past 6
+              years, making products in the music, medical, and energy
+              industries.
+            </p>
+          </div>
           <Button text="Download C.V." Icon={Download} />
         </HomeCard>
         <ProjectList />
