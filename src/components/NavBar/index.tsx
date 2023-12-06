@@ -8,7 +8,6 @@ function NavBar() {
       <Link href="/">
         <R height={48} width={48} />
       </Link>
-
       <Socials />
     </nav>
   );

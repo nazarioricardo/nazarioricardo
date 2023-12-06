@@ -8,9 +8,9 @@ function Socials() {
   return (
     <ul className={styles.container}>
       <Item
-        src={Instagram}
-        link="https://www.instagram.com/ricrdo.n/"
-        alt="Ricardo Nazario Instagram"
+        src={Github}
+        link="https://github.com/nazarioricardo"
+        alt="Ricardo Nazario Github"
       />
 
       <Item
@@ -20,9 +20,9 @@ function Socials() {
       />
 
       <Item
-        src={Github}
-        link="https://github.com/nazarioricardo"
-        alt="Ricardo Nazario Github"
+        src={Instagram}
+        link="https://www.instagram.com/ricrdo.n/"
+        alt="Ricardo Nazario Instagram"
       />
     </ul>
   );

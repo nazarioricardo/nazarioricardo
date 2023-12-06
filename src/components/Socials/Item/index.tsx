@@ -13,7 +13,7 @@ function Item({ src, link, alt }: ItemProps) {
   return (
     <li className={styles.container}>
       <a href={link} target="_blank">
-        <Image src={src} alt={alt} height={48} />
+        <Image src={src} alt={alt} height={75} width={75} />
       </a>
     </li>
   );

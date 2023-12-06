@@ -5,7 +5,7 @@ import NavBar from "@components/NavBar";
 export default function Home() {
   return (
     <main>
-      {/* <NavBar /> */}
+      <NavBar />
       <HomeCard>
         <h1 className={styles.title}>Ricardo Nazario</h1>
         <p className={styles.bio}>
