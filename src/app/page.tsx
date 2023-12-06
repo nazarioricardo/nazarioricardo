@@ -1,6 +1,7 @@
 import HomeCard from "@components/HomeCard";
 import styles from "./page.module.css";
 import NavBar from "@components/NavBar";
+import Button from "@components/Button";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
           I've worked as a full stack and mobile developer for the past 6 years,
           making products in the music, medical, and energy industries.
         </p>
+
+        <Button />
+        <Button />
       </HomeCard>
     </main>
   );

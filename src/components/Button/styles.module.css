@@ -1,0 +1,16 @@
+.button {
+  background-color: rgb(var(--background-rgb));
+  height: 52px;
+  width: "100%";
+  border: none;
+  border-radius: 50%;
+  color: rgb(var(--foreground-rgb));
+  cursor: pointer;
+  /* font-size: 14px; */
+  /* font-weight: 600; */
+  /* line-height: 1; */
+  /* padding: 10px 15px; */
+  text-align: center;
+  /* text-decoration: none; */
+  /* transition: all 0.2s ease-in-out; */
+}
