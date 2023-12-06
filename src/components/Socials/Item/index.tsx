@@ -11,7 +11,7 @@ type ItemProps = {
 
 function Item({ src, link, alt }: ItemProps) {
   return (
-    <li className={styles.container}>
+    <li className={styles.socials_item}>
       <a href={link} target="_blank">
         <Image src={src} alt={alt} height={75} width={75} />
       </a>

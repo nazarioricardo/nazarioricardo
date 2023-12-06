@@ -1,4 +1,4 @@
-.container {
+.navBar {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,7 +8,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* background-color: rgb(var(--surface-rgb)); */
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
+}
+
+.logo {
+  opacity: 0;
 }

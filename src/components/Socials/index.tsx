@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 function Socials() {
   return (
-    <ul className={styles.container}>
+    <ul className={styles.socials}>
       <Item
         src={Github}
         link="https://github.com/nazarioricardo"

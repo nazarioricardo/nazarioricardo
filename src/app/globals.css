@@ -8,9 +8,10 @@
   --foreground-rgb: 244, 244, 244;
   --background-rgb: 23, 23, 23;
   --surface-rgb: 56, 73, 75;
+  --hover-rgb: 32, 32, 32;
   --padding-horizontal: 5.5rem;
   --padding-vertical: 4.3rem;
-  --page-padding: var(--padding-horizontal) var(--padding-vertical);
+  --page-padding: var(--padding-vertical) var(--padding-horizontal);
 }
 
 @media (prefers-color-scheme: dark) {

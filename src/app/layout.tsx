@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Jomolhari, Josefin_Slab } from "next/font/google";
+import { Jomolhari, Josefin_Slab, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 
 const jomolhari = Jomolhari({
@@ -7,6 +7,12 @@ const jomolhari = Jomolhari({
   subsets: ["latin"],
   variable: "--font-jomolhari",
 });
+
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin-sans",
+});
+
 const josefinSlab = Josefin_Slab({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={`${jomolhari.variable}`} lang="en">
+    <html className={`${jomolhari.variable} ${josefinSans.variable}`} lang="en">
       <body className={josefinSlab.className}>{children}</body>
     </html>
   );

@@ -6,7 +6,7 @@ type HomeCardProps = {
 };
 
 function HomeCard({ children }: HomeCardProps) {
-  return <div className={styles.container}>{children}</div>;
+  return <div className={styles.homeCard}>{children}</div>;
 }
 
 export default HomeCard;

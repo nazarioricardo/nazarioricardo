@@ -2,6 +2,7 @@ import HomeCard from "@components/HomeCard";
 import styles from "./page.module.css";
 import NavBar from "@components/NavBar";
 import Button from "@components/Button";
+import { Download } from "@mui/icons-material";
 
 export default function Home() {
   return (
@@ -18,8 +19,7 @@ export default function Home() {
           making products in the music, medical, and energy industries.
         </p>
 
-        <Button />
-        <Button />
+        <Button text="Download C.V." Icon={Download} />
       </HomeCard>
     </main>
   );
