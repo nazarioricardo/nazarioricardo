@@ -8,9 +8,7 @@ If you wanna run my site locally (for some reason) skip a bit further down. Othe
 
 ## A Bit About Me.
 
-You did it! You read a "a bit about me."
-
-I like dumb jokes like that. I also like programming, and making nice things. I'm from Puerto Rico, I speak Spanish, English, and I'm trying to learn Portuguese and German. Because why not?
+I like programming, and making nice things. I used to make a lot of music, now I play guitar in my spare time. I'm from Puerto Rico, I speak Spanish, English, and I'm trying to learn Portuguese and German. Because why not?
 
 ## Running My Website Locally
 
