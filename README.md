@@ -8,7 +8,12 @@ If you wanna run my site locally (for some reason) skip a bit further down. Othe
 
 ## A Bit About Me.
 
-I like programming, and making nice things. I used to make a lot of music, now I play guitar in my spare time. I'm from Puerto Rico, I speak Spanish, English, and I'm trying to learn Portuguese and German. Because why not?
+```javascript
+Boolean(
+  "I like programming and making nice things. I used to make a lot of music. Now I play guitar in my spare time. I'm from Puerto Rico, I speak Spanish, English, and I'm trying to learn Portuguese and German. Because why not?"
+);
+// This will resolve to true, therefore, it is one bit, and it is about me.
+```
 
 ## Running My Website Locally
 
