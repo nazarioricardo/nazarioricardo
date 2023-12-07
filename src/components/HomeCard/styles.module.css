@@ -11,4 +11,5 @@
   align-items: stretch;
   background-color: rgb(var(--surface-rgb));
   padding: var(--page-padding);
+  background: linear-gradient(rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
 }
