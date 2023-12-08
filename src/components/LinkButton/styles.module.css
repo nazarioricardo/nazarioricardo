@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  background-color: rgb(var(--background-rgb));
+  font-family: var(--font-josefin-sans);
+  font-size: 1.1rem;
+  height: 52px;
+  border: none;
+  border-radius: 26px;
+  color: rgb(var(--foreground-rgb));
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: rgb(var(--hover-rgb));
+}
