@@ -3,6 +3,7 @@ You've reached my github page!
 ![Happy Larry](larry-happy.gif)
 
 It also happens to be the README for my personal website's repository.
+**(Currently under construction)**
 
 If you wanna run my site locally (for some reason) skip a bit further down. Otherwise, read a bit about me.
 
