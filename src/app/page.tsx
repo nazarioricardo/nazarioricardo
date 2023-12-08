@@ -1,9 +1,9 @@
 import HomeCard from "@components/HomeCard";
 import styles from "./page.module.css";
 import NavBar from "@components/NavBar";
-import Button from "@components/Button";
 import { Download } from "@mui/icons-material";
 import ProjectList from "@components/ProjectsList";
+import LinkButton from "@components/LinkButton";
 
 export default function Home() {
   return (
@@ -23,7 +23,11 @@ export default function Home() {
               industries.
             </p>
           </div>
-          <Button text="Download C.V." Icon={Download} />
+          <LinkButton
+            text="View C.V."
+            href="/Ricardo Nazario Resume.pdf"
+            Icon={Download}
+          />
         </HomeCard>
         <ProjectList />
       </div>
