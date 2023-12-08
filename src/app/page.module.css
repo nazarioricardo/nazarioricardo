@@ -2,6 +2,11 @@
   padding-bottom: 1rem;
 }
 
+.email {
+  font-family: var(--font-josefin-sans);
+  font-size: 20px;
+}
+
 .bio {
   font-size: 1.5rem;
   line-height: 2.2rem;

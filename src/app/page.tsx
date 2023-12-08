@@ -12,7 +12,11 @@ export default function Home() {
       <div className={styles.content}>
         <HomeCard>
           <div>
-            <h1 className={styles.title}>Ricardo Nazario</h1>
+            <div className={styles.title}>
+              <h1>Ricardo Nazario</h1>
+              <p className={styles.email}>nazarioricardo@gmail.com</p>
+            </div>
+
             <p className={styles.bio}>
               Hello. I'm a software developer who loves creating joyful products
               that make life a little nicer for everyone.
@@ -22,6 +26,13 @@ export default function Home() {
               years, making products in the music, medical, and energy
               industries.
             </p>
+            <p>
+              <b>Disclaimer</b>, this website is a work in progress. I'm
+              currently working on:
+            </p>
+            <p>1. Layouts for smaller screens</p>
+            <p>2. Adding my own content pages (instead of external links)</p>
+            <p>3. A number of awesome projects that will fill the page</p>
           </div>
           <LinkButton
             text="View C.V."
