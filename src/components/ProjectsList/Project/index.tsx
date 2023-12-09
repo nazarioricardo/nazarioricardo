@@ -14,18 +14,7 @@ function Project({ src, link, alt, title, description }: ProjectProps) {
   return (
     <Link className={styles.project} href={link}>
       <div className={styles.imageContainer}>
-        <Image
-          style={{
-            borderRadius: "50%",
-            width: 174,
-            height: 174,
-            objectFit: "cover",
-          }}
-          src={src}
-          alt={alt}
-          height={174}
-          width={174}
-        />
+        <Image className={styles.image} src={src} alt={alt} />
       </div>
       <div className={styles.content}>
         <h3>{title}</h3>
