@@ -12,7 +12,7 @@ type LinkButtonProps = {
 
 function LinkButton({ text, Icon, href, ...props }: LinkButtonProps) {
   return (
-    <Link {...props} href={href} download className={styles.button}>
+    <Link {...props} href={href} download className={styles.linkButton}>
       {text} {Icon && <Icon />}
     </Link>
   );

@@ -1,16 +1,28 @@
+"use client";
+
+import { useState } from "react";
 import HomeCard from "@components/HomeCard";
 import styles from "./page.module.css";
 import NavBar from "@components/NavBar";
-import { Download, Email } from "@mui/icons-material";
+import { Download } from "@mui/icons-material";
 import ProjectList from "@components/ProjectsList";
 import LinkButton from "@components/LinkButton";
 
 export default function Home() {
+  const [shouldDisplayCard, setShouldDisplayCard] = useState(false);
+  const onClickAboutMe = () => {
+    setShouldDisplayCard(true);
+  };
+
+  const onClickBack = () => {
+    setShouldDisplayCard(false);
+  };
+
   return (
     <main>
-      <NavBar />
+      <NavBar onClickAboutMe={onClickAboutMe} />
       <div className={styles.content}>
-        <HomeCard shouldDisplay={false}>
+        <HomeCard shouldDisplay={shouldDisplayCard} onClickBack={onClickBack}>
           <div>
             <div className={styles.title}>
               <h1>Ricardo Nazario</h1>
@@ -40,6 +52,10 @@ export default function Home() {
             Icon={Download}
           />
         </HomeCard>
+        <div className={styles.mobileTitle}>
+          <h1>Ricardo Nazario</h1>
+          <p className={styles.mobileEmail}>nazarioricardo@gmail.com</p>
+        </div>
         <ProjectList />
       </div>
     </main>

@@ -1,4 +1,4 @@
-.button {
+.linkButton {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,11 +10,22 @@
   min-height: 52px;
   border: none;
   border-radius: 26px;
+  padding-left: 26px;
+  padding-right: 26px;
   color: rgb(var(--foreground-rgb));
   cursor: pointer;
   text-align: center;
 }
 
-.button:hover {
+.linkButton:hover {
   background-color: rgb(var(--hover-rgb));
+}
+
+@media only screen and (max-width: 1170px) {
+  .linkButton {
+    min-height: 48px;
+    border-radius: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
