@@ -24,14 +24,17 @@
 
 @media only screen and (max-width: 1170px) {
   .homeCard {
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: calc(30px - 100vw);
-    width: 100vw;
-    z-index: 1;
-    box-shadow: black 0px 0px 10px;
     max-width: 100%;
-    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 48px;
+    overflow-y: scroll;
+    box-shadow: black 0px 20px 10px;
+    z-index: 1;
   }
 
   .showCard {

@@ -31,7 +31,8 @@ export default function Home() {
               priorities are:
             </p>
             <p>1. Adding my own content pages (instead of external links)</p>
-            <p>2. A number of awesome projects that will fill the page</p>
+            <p>2. Improved responsiveness for smaller screens</p>
+            <p>3. A number of awesome projects that will fill the page</p>
           </div>
           <LinkButton
             text="View C.V."
