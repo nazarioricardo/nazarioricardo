@@ -12,4 +12,30 @@
   background-color: rgb(var(--surface-rgb));
   padding: var(--page-padding);
   background: linear-gradient(rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
+  transition: 1s;
+}
+
+@media only screen and (max-width: 1360px) {
+  .homeCard {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .homeCard {
+    position: absolute;
+    top: 0;
+    left: calc(30px - 100vw);
+    width: 100vw;
+    z-index: 1;
+    box-shadow: black 0px 0px 10px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .showCard {
+    left: 0;
+    transition: 1s;
+  }
 }

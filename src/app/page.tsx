@@ -1,7 +1,7 @@
 import HomeCard from "@components/HomeCard";
 import styles from "./page.module.css";
 import NavBar from "@components/NavBar";
-import { Download } from "@mui/icons-material";
+import { Download, Email } from "@mui/icons-material";
 import ProjectList from "@components/ProjectsList";
 import LinkButton from "@components/LinkButton";
 
@@ -27,12 +27,11 @@ export default function Home() {
               industries.
             </p>
             <p>
-              <b>Disclaimer</b>, this website is a work in progress. I'm
-              currently working on:
+              <b>Disclaimer</b>, this website is a work in progress. Current
+              priorities are:
             </p>
-            <p>1. Layouts for smaller screens</p>
-            <p>2. Adding my own content pages (instead of external links)</p>
-            <p>3. A number of awesome projects that will fill the page</p>
+            <p>1. Adding my own content pages (instead of external links)</p>
+            <p>2. A number of awesome projects that will fill the page</p>
           </div>
           <LinkButton
             text="View C.V."

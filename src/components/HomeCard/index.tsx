@@ -1,4 +1,6 @@
-import { ReactNode } from "react";
+"use client";
+
+import { ReactNode, useState } from "react";
 import styles from "./styles.module.css";
 
 type HomeCardProps = {
@@ -6,7 +8,20 @@ type HomeCardProps = {
 };
 
 function HomeCard({ children }: HomeCardProps) {
-  return <div className={styles.homeCard}>{children}</div>;
+  const [shouldShow, setShouldShow] = useState(false);
+
+  const onClick = () => {
+    setShouldShow(!shouldShow);
+  };
+
+  return (
+    <div
+      onClick={onClick}
+      className={`${styles.homeCard} ${shouldShow ? styles.showCard : null}`}
+    >
+      {children}
+    </div>
+  );
 }
 
 export default HomeCard;
