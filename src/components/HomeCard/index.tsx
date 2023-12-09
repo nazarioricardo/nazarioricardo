@@ -1,23 +1,17 @@
-"use client";
-
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 import styles from "./styles.module.css";
 
 type HomeCardProps = {
   children: ReactNode;
+  shouldDisplay: boolean;
 };
 
-function HomeCard({ children }: HomeCardProps) {
-  const [shouldShow, setShouldShow] = useState(false);
-
-  const onClick = () => {
-    setShouldShow(!shouldShow);
-  };
-
+function HomeCard({ shouldDisplay, children }: HomeCardProps) {
   return (
     <div
-      onClick={onClick}
-      className={`${styles.homeCard} ${shouldShow ? styles.showCard : null}`}
+      className={`${styles.homeCard} ${
+        shouldDisplay ? styles.displayCard : null
+      }`}
     >
       {children}
     </div>

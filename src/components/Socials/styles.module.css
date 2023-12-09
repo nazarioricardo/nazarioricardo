@@ -3,4 +3,12 @@
   flex-direction: row;
   justify-content: flex-end;
   height: 75px;
+  gap: 24px;
+}
+
+@media only screen and (max-width: 1170px) {
+  .socials {
+    height: 48px;
+    gap: 12px;
+  }
 }

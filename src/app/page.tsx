@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <NavBar />
       <div className={styles.content}>
-        <HomeCard>
+        <HomeCard shouldDisplay={false}>
           <div>
             <div className={styles.title}>
               <h1>Ricardo Nazario</h1>

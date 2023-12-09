@@ -12,15 +12,34 @@
   padding-right: var(--padding-horizontal);
   background-color: rgb(var(--background-rgb));
   z-index: 1;
+  gap: 48px;
 }
 
 .logo {
   opacity: 0;
 }
 
+.aboutMeButton {
+  display: none;
+}
+
 @media only screen and (max-width: 1170px) {
   .navBar {
-    height: 128px;
+    height: 96px;
     padding-left: 0;
+    padding-right: 0;
+    gap: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .aboutMeButton {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 1.1rem;
+    height: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 24px;
   }
 }

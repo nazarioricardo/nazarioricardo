@@ -9,9 +9,9 @@ type ItemProps = {
 
 function Item({ src, link, alt }: ItemProps) {
   return (
-    <li className={styles.socials_item}>
+    <li className={styles.socialsItem}>
       <a href={link} target="_blank">
-        <Image src={src} alt={alt} height={75} width={75} />
+        <Image className={styles.image} src={src} alt={alt} />
       </a>
     </li>
   );
