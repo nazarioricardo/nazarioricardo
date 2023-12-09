@@ -18,13 +18,13 @@ export default function Home() {
             </div>
 
             <p className={styles.bio}>
-              Hello. I'm a software developer who loves creating joyful products
-              that make life a little nicer for everyone.
+              {`Hello. I'm a software developer who loves creating joyful products
+              that make life a little nicer for everyone.`}
             </p>
             <p className={styles.bio}>
-              I've worked as a full stack and mobile developer for the past 6
+              {`I've worked as a full stack and mobile developer for the past 6
               years, making products in the music, medical, and energy
-              industries.
+              industries.`}
             </p>
             <p>
               <b>Disclaimer</b>, this website is a work in progress. Current
