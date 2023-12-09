@@ -10,8 +10,17 @@
   justify-content: space-between;
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
+  background-color: rgb(var(--background-rgb));
+  z-index: 1;
 }
 
 .logo {
   opacity: 0;
+}
+
+@media only screen and (max-width: 1170px) {
+  .navBar {
+    height: 128px;
+    padding-left: 0;
+  }
 }

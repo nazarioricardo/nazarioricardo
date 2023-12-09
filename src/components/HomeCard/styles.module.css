@@ -13,6 +13,7 @@
   padding: var(--page-padding);
   background: linear-gradient(rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
   transition: 1s;
+  z-index: 9;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -34,7 +35,6 @@
     gap: 48px;
     overflow-y: scroll;
     box-shadow: black 0px 20px 10px;
-    z-index: 1;
   }
 
   .showCard {
