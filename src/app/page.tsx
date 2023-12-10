@@ -45,7 +45,7 @@ export default function Home() {
               </p>
               <p>
                 This page launched December 9, 2023. There are a few things I
-                still need to add
+                still need to add.
               </p>
               <p>
                 If you're curious, check out the current{" "}
