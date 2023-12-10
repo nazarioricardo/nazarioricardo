@@ -48,7 +48,7 @@ export default function Home() {
                 still need to add.
               </p>
               <p>
-                If you're curious, check out the current{" "}
+                {`If you're curious, check out the current `}
                 <Link
                   className={styles.githubLink}
                   href="https://github.com/nazarioricardo/nazarioricardo/issues"
