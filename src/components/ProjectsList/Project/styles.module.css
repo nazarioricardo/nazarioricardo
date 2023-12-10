@@ -8,12 +8,16 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0 48px;
-
-  /* background-color: gray; */
 }
 
 .project:hover {
   background-color: rgb(var(--hover-rgb));
+}
+
+@media only screen and (max-width: 1360px) {
+  .project {
+    padding: 0 3%;
+  }
 }
 
 .image {
@@ -23,17 +27,22 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 1360px) {
-  .project {
-    padding: 0 3%;
-  }
-}
-
 .imageContainer {
   position: relative;
   height: 100%;
   width: 174px;
   padding: 29px 0;
+}
+
+@media only screen and (max-width: 1170px) {
+  .image {
+    width: 96px;
+    height: 96px;
+  }
+
+  .imageContainer {
+    width: 96px;
+  }
 }
 
 .content {

@@ -20,59 +20,57 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <>
       <NavBar onClickAboutMe={onClickAboutMe} />
-      <div className={styles.content}>
-        <HomeCard shouldDisplay={shouldDisplayCard} onClickBack={onClickBack}>
-          <div>
-            <div className={styles.title}>
-              <h1>Ricardo Nazario</h1>
-              <p className={styles.email}>nazarioricardo@gmail.com</p>
-            </div>
+      <main>
+        <div className={styles.content}>
+          <HomeCard shouldDisplay={shouldDisplayCard} onClickBack={onClickBack}>
+            <div>
+              <div className={styles.title}>
+                <h1>Ricardo Nazario</h1>
+                <p className={styles.email}>nazarioricardo@gmail.com</p>
+              </div>
 
-            <p className={styles.bio}>
-              {`Hello. I'm a software developer who loves creating joyful products
+              <p className={styles.bio}>
+                {`Hello. I'm a software developer who loves creating joyful products
               that make life a little nicer for everyone.`}
-            </p>
-            <p className={styles.bio}>
-              {`I've worked as a full stack and mobile developer for the past 6
+              </p>
+              <p className={styles.bio}>
+                {`I've worked as a full stack and mobile developer for the past 6
               years, making products in the music, medical, and energy
               industries.`}
-            </p>
-            <p>
-              <b>Disclaimer</b>, this website is a work in progress. Current
-              priorities are:
-            </p>
-            <p>1. Adding my own content pages (instead of external links)</p>
-            <p>2. Improved responsiveness for smaller screens</p>
-            <p>3. A number of awesome projects that will fill the page</p>
-          </div>
-          <div className={styles.cardCvButton}>
-            <LinkButton
-              text="View C.V."
-              href="/Ricardo Nazario Resume.pdf"
-              Icon={Download}
-            />
-          </div>
-        </HomeCard>
-        <div className={`${styles.title} ${styles.mobileTitle}`}>
-          <h1>Ricardo Nazario</h1>
-          <p className={styles.email}>nazarioricardo@gmail.com</p>
-          <div className={styles.mobileCvButton}>
-            <Link className={styles.link} href="/Ricardo Nazario Resume.pdf">
-              <span> View C.V. </span>
-              <Download />
-            </Link>
-            {/* <LinkButton
-              text="View C.V."
-              href="/Ricardo Nazario Resume.pdf"
-              Icon={Download}
-              gradient
-            /> */}
-          </div>
+              </p>
+              <p>
+                <b>Disclaimer</b>, this website is a work in progress. Current
+                priorities are:
+              </p>
+              <p>1. Adding my own content pages (instead of external links)</p>
+              <p>2. Improved responsiveness for smaller screens</p>
+              <p>3. A number of awesome projects that will fill the page</p>
+            </div>
+            <div className={styles.cardCvButton}>
+              <LinkButton
+                text="View C.V."
+                href="/Ricardo Nazario Resume.pdf"
+                Icon={Download}
+              />
+            </div>
+          </HomeCard>
+
+          <section className={`${styles.title} ${styles.mobileTitle}`}>
+            <h1>Ricardo Nazario</h1>
+            <p className={styles.email}>nazarioricardo@gmail.com</p>
+            <div className={styles.mobileCvButton}>
+              <Link className={styles.link} href="/Ricardo Nazario Resume.pdf">
+                <span> View C.V. </span>
+                <Download />
+              </Link>
+            </div>
+          </section>
+
+          <ProjectList />
         </div>
-        <ProjectList />
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
