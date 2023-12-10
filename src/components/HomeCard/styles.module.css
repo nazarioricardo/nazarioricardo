@@ -30,7 +30,7 @@
 
 @media only screen and (max-width: 1170px) {
   .homeCard {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: calc(0px - 100vw);
@@ -40,6 +40,7 @@
     padding-top: 0;
     padding-bottom: 24px;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .displayCard {
