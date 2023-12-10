@@ -54,6 +54,7 @@
 
   .mobileTitle {
     padding-top: 96px;
+    padding-bottom: 0;
     display: inline-block;
   }
 
