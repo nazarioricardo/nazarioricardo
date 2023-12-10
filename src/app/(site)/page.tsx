@@ -27,7 +27,7 @@ export default function Home() {
           <HomeCard shouldDisplay={shouldDisplayCard} onClickBack={onClickBack}>
             <div>
               <div className={styles.title}>
-                <h1>Ricardo Nazario</h1>
+                <h1 className={styles.name}>Ricardo Nazario</h1>
                 <p className={styles.email}>nazarioricardo@gmail.com</p>
               </div>
 
@@ -69,7 +69,7 @@ export default function Home() {
           </HomeCard>
 
           <section className={`${styles.title} ${styles.mobileTitle}`}>
-            <h1>Ricardo Nazario</h1>
+            <h1 className={styles.name}>Ricardo Nazario</h1>
             <p className={styles.email}>nazarioricardo@gmail.com</p>
             <div className={styles.mobileCvButton}>
               <Link className={styles.link} href="/Ricardo Nazario Resume.pdf">
