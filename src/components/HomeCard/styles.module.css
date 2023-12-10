@@ -16,7 +16,7 @@
   z-index: 9;
 }
 
-.backButton {
+.backButtonContainer {
   display: none;
 }
 
@@ -34,9 +34,9 @@
     bottom: 0;
     left: calc(0px - 100vw);
     max-width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
-    gap: 48px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 0;
     overflow-y: scroll;
   }
 
@@ -46,7 +46,11 @@
     box-shadow: black 0px 20px 10px;
   }
 
-  .backButton {
-    display: inline-block;
+  .backButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 96px;
   }
 }

@@ -24,16 +24,43 @@
   display: none;
 }
 
+.cardCvButton {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 1170px) {
+  .content {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .mobileCvButton {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .link {
+    min-height: 52px;
+    font-family: var(--font-josefin-sans);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+
   .mobileTitle {
     padding-top: 96px;
     display: inline-block;
   }
 
-  .mobileTitle > h1 {
-    font-size: 1.2rem;
+  .cardCvButton {
+    display: none;
   }
 
+  .mobileTitle > h1,
   .title > h1 {
     font-size: 2rem;
   }

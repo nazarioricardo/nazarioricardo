@@ -7,6 +7,7 @@ import NavBar from "@components/NavBar";
 import { Download } from "@mui/icons-material";
 import ProjectList from "@components/ProjectsList";
 import LinkButton from "@components/LinkButton";
+import Link from "next/link";
 
 export default function Home() {
   const [shouldDisplayCard, setShouldDisplayCard] = useState(false);
@@ -46,15 +47,29 @@ export default function Home() {
             <p>2. Improved responsiveness for smaller screens</p>
             <p>3. A number of awesome projects that will fill the page</p>
           </div>
-          <LinkButton
-            text="View C.V."
-            href="/Ricardo Nazario Resume.pdf"
-            Icon={Download}
-          />
+          <div className={styles.cardCvButton}>
+            <LinkButton
+              text="View C.V."
+              href="/Ricardo Nazario Resume.pdf"
+              Icon={Download}
+            />
+          </div>
         </HomeCard>
-        <div className={styles.mobileTitle}>
+        <div className={`${styles.title} ${styles.mobileTitle}`}>
           <h1>Ricardo Nazario</h1>
-          <p className={styles.mobileEmail}>nazarioricardo@gmail.com</p>
+          <p className={styles.email}>nazarioricardo@gmail.com</p>
+          <div className={styles.mobileCvButton}>
+            <Link className={styles.link} href="/Ricardo Nazario Resume.pdf">
+              <span> View C.V. </span>
+              <Download />
+            </Link>
+            {/* <LinkButton
+              text="View C.V."
+              href="/Ricardo Nazario Resume.pdf"
+              Icon={Download}
+              gradient
+            /> */}
+          </div>
         </div>
         <ProjectList />
       </div>

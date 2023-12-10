@@ -7,12 +7,17 @@ import styles from "./styles.module.css";
 type LinkButtonProps = {
   text: string;
   Icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string };
+  gradient?: boolean;
 } & LinkProps &
   RefAttributes<HTMLAnchorElement>;
 
-function LinkButton({ text, Icon, href, ...props }: LinkButtonProps) {
+function LinkButton({ text, Icon, href, gradient, ...props }: LinkButtonProps) {
   return (
-    <Link {...props} href={href} download className={styles.linkButton}>
+    <Link
+      {...props}
+      href={href}
+      className={`${styles.linkButton} ${gradient && styles.gradient}`}
+    >
       {text} {Icon && <Icon />}
     </Link>
   );

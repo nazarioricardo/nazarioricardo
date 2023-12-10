@@ -5,11 +5,15 @@ import styles from "./styles.module.css";
 type ButtonProps = {
   text: string;
   Icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string };
+  gradient?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-function Button({ text, Icon, ...props }: ButtonProps) {
+function Button({ text, Icon, gradient, ...props }: ButtonProps) {
   return (
-    <button {...props} className={styles.button}>
+    <button
+      {...props}
+      className={`${styles.button} ${gradient && styles.gradient}`}
+    >
       {text} {Icon && <Icon />}
     </button>
   );

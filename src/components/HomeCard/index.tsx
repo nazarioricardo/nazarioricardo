@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import styles from "./styles.module.css";
 import Button from "@components/Button";
+import styles from "./styles.module.css";
 
 type HomeCardProps = {
   children: ReactNode;
@@ -15,7 +15,7 @@ function HomeCard({ shouldDisplay, onClickBack, children }: HomeCardProps) {
         shouldDisplay ? styles.displayCard : null
       }`}
     >
-      <div className={styles.backButton}>
+      <div className={styles.backButtonContainer}>
         <Button onClick={onClickBack} text="Back" />
       </div>
       {children}
