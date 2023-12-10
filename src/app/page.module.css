@@ -25,7 +25,7 @@
 }
 
 .cardCvButton {
-  display: inline-block;
+  padding-top: 24px;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -56,10 +56,6 @@
     padding-top: 96px;
     padding-bottom: 0;
     display: inline-block;
-  }
-
-  .cardCvButton {
-    display: none;
   }
 
   .mobileTitle > h1,
