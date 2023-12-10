@@ -28,12 +28,14 @@
   padding-top: 24px;
 }
 
-.githubLink {
+.githubLink,
+.link {
   text-decoration: underline;
   font-weight: bold;
 }
 
-.githubLink:hover {
+.githubLink:hover,
+.link:hover {
   opacity: 0.5;
 }
 

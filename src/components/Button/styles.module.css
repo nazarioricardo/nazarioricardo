@@ -10,6 +10,7 @@
   min-height: 52px;
   padding-left: 26px;
   padding-right: 26px;
+  padding-top: 3px; /* This is weird but it fixes this aesthetic */
   border: none;
   border-radius: 26px;
   color: rgb(var(--foreground-rgb));
@@ -23,6 +24,10 @@
 
 .gradient {
   background: linear-gradient(45deg, rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
+}
+
+.gradient:hover {
+  background: linear-gradient(45deg, rgb(19, 134, 140), rgb(24, 102, 144));
 }
 
 @media only screen and (max-width: 1170px) {
