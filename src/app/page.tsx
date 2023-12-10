@@ -41,12 +41,23 @@ export default function Home() {
               industries.`}
               </p>
               <p>
-                <b>Disclaimer</b>, this website is a work in progress. Current
-                priorities are:
+                <b>Dear Visitor,</b>
               </p>
-              <p>1. Adding my own content pages (instead of external links)</p>
-              <p>2. Improved responsiveness for smaller screens</p>
-              <p>3. A number of awesome projects that will fill the page</p>
+              <p>
+                This page launched December 9, 2023. There are a few things I
+                still need to add
+              </p>
+              <p>
+                If you're curious, check out the current{" "}
+                <Link
+                  className={styles.githubLink}
+                  href="https://github.com/nazarioricardo/nazarioricardo/issues"
+                  target="_blank"
+                >
+                  github issues
+                </Link>
+                .
+              </p>
             </div>
             <div className={styles.cardCvButton}>
               <LinkButton

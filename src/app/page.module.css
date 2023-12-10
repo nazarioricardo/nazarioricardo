@@ -28,6 +28,15 @@
   padding-top: 24px;
 }
 
+.githubLink {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.githubLink:hover {
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 1170px) {
   .content {
     flex-direction: column;
