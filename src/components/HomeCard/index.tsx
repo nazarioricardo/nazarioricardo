@@ -19,6 +19,7 @@ function HomeCard({ shouldDisplay, onClickBack, children }: HomeCardProps) {
         <Button onClick={onClickBack} text="Back" />
       </div>
       {children}
+      <div className={styles.fullHeight} />
     </div>
   );
 }
