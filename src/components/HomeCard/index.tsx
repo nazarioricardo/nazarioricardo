@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import Button from "@components/Button";
+import Button from "@nr/components/Button";
 import styles from "./styles.module.css";
 
 type HomeCardProps = {

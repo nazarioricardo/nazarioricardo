@@ -1,6 +1,6 @@
-import Socials from "@components/Socials";
+import Socials from "@nr/components/Socials";
 import styles from "./styles.module.css";
-import Button from "@components/Button";
+import Button from "@nr/components/Button";
 
 type NavBarProps = {
   onClickAboutMe: () => void;
