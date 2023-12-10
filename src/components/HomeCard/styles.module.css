@@ -1,5 +1,5 @@
 .homeCard {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   min-width: 33%;
   max-width: 40%;
   border-top-right-radius: 100px;
@@ -20,7 +20,7 @@
 }
 
 .fullHeight {
-  height: 100vh;
+  display: none;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -33,6 +33,7 @@
 @media only screen and (max-width: 1170px) {
   .homeCard {
     position: absolute;
+    min-height: auto;
     top: 0;
     bottom: 0;
     left: calc(0px - 100vw);
@@ -58,5 +59,9 @@
     justify-content: center;
     align-items: flex-start;
     min-height: 96px;
+  }
+
+  .fullHeight {
+    height: 100vh;
   }
 }
