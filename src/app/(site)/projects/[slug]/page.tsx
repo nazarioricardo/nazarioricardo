@@ -5,8 +5,9 @@ import NavBar from "@nr/components/NavBar";
 import { getSinglePost } from "@nr/sanity/query";
 import { Post } from "@nr/types/Post";
 import Image from "next/image";
-import styles from "./page.module.css";
 import { PortableText } from "@portabletext/react";
+import styles from "./page.module.css";
+import "./page.css";
 
 function ProjectPage() {
   const [project, setProject] = useState<Post | null>(null);
