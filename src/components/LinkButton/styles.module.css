@@ -8,10 +8,11 @@
   font-family: var(--font-josefin-sans);
   font-size: 1.1rem;
   min-height: 52px;
-  border: none;
-  border-radius: 26px;
   padding-left: 26px;
   padding-right: 26px;
+  padding-top: 3px; /* This is weird but it fixes this aesthetic */
+  border: none;
+  border-radius: 26px;
   color: rgb(var(--foreground-rgb));
   cursor: pointer;
   text-align: center;
