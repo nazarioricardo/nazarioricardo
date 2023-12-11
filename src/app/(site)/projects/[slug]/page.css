@@ -6,10 +6,19 @@ main {
 }
 
 p,
-ul {
+ul,
+a {
   font-family: var(--font-josefin-sans);
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 ul {

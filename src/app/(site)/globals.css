@@ -6,7 +6,7 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 244, 244, 244;
-  --background-rgb: 23, 23, 23;
+  --background-rgb: 15, 15, 15;
   --surface-rgb: 56, 73, 75;
   --hover-rgb: 32, 32, 32;
   --padding-horizontal: 5.5rem;
@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 244, 244, 244;
-    --background-rgb: 23, 23, 23;
+    --background-rgb: 15, 15, 15;
     --surface-rgb: 56, 73, 75;
   }
 }
