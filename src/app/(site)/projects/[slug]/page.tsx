@@ -11,6 +11,7 @@ import "./page.css";
 
 function ProjectPage() {
   const [project, setProject] = useState<Post | null>(null);
+
   useEffect(() => {
     getSinglePost("copper")
       .then((project: Post) => {
