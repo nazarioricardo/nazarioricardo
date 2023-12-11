@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import styles from "./styles.module.css";
 import {
   ExpandLess,
@@ -13,7 +13,13 @@ type HomeCardProps = {
   onClickBack: () => void;
 };
 
-function HomeCard({ shouldDisplay, onClickBack, children }: HomeCardProps) {
+function HomeCard({ children }: HomeCardProps) {
+  const [shouldDisplay, setShouldDisplay] = useState(false);
+
+  const onClickAboutMe = () => {
+    setShouldDisplay(!shouldDisplay);
+  };
+
   return (
     <div
       className={`${styles.homeCard} ${
@@ -21,16 +27,16 @@ function HomeCard({ shouldDisplay, onClickBack, children }: HomeCardProps) {
       }`}
     >
       {shouldDisplay ? (
-        <button className={styles.header} onClick={onClickBack}>
+        <button className={styles.header} onClick={onClickAboutMe}>
           About Me <ExpandMoreRounded fontSize="large" />
         </button>
       ) : (
-        <button className={styles.header} onClick={onClickBack}>
+        <button className={styles.header} onClick={onClickAboutMe}>
           About Me <ExpandLessRounded fontSize="large" />
         </button>
       )}
-
       {children}
+
       <div className={styles.fullHeight} />
     </div>
   );
