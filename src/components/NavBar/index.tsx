@@ -1,14 +1,9 @@
 import Socials from "@nr/components/Socials";
 import styles from "./styles.module.css";
-import Button from "@nr/components/Button";
 import Link from "next/link";
 import R from "@nr/icons/R";
 
-type NavBarProps = {
-  onClickAboutMe: () => void;
-};
-
-function NavBar({ onClickAboutMe }: NavBarProps) {
+function NavBar() {
   return (
     <nav className={styles.navBar}>
       <Link className={styles.logo} href="/">

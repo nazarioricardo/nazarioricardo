@@ -9,8 +9,6 @@ import {
 
 type HomeCardProps = {
   children: ReactNode;
-  shouldDisplay: boolean;
-  onClickBack: () => void;
 };
 
 function HomeCard({ children }: HomeCardProps) {

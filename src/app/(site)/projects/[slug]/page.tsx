@@ -23,7 +23,7 @@ function ProjectPage() {
 
   return (
     <>
-      <NavBar onClickAboutMe={() => console.log("not here")} />
+      <NavBar />
       <main>
         {project && (
           <article className={styles.project}>

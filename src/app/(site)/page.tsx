@@ -10,21 +10,12 @@ import LinkButton from "@nr/components/LinkButton";
 import Link from "next/link";
 
 export default function Home() {
-  const [shouldDisplayCard, setShouldDisplayCard] = useState(false);
-  const onClickAboutMe = () => {
-    setShouldDisplayCard(true);
-  };
-
-  const onClickBack = () => {
-    setShouldDisplayCard(false);
-  };
-
   return (
     <>
-      <NavBar onClickAboutMe={onClickAboutMe} />
+      <NavBar />
       <main>
         <div className={styles.content}>
-          <HomeCard shouldDisplay={shouldDisplayCard} onClickBack={onClickBack}>
+          <HomeCard>
             <div>
               <div className={styles.title}>
                 <h1 className={styles.name}>Ricardo Nazario</h1>

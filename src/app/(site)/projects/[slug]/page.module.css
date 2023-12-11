@@ -6,6 +6,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
+  width: 900px;
 }
 
 .header {
@@ -34,5 +35,11 @@
   .project {
     padding: 24px;
     padding-top: 96px;
+    width: 100%;
+  }
+
+  .image {
+    width: 96px;
+    height: 96px;
   }
 }
