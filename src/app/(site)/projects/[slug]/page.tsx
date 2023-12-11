@@ -8,6 +8,7 @@ import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import styles from "./page.module.css";
 import "./page.css";
+import PostImage from "@nr/components/PostImage";
 
 function ProjectPage() {
   const [project, setProject] = useState<Post | null>(null);
@@ -33,8 +34,9 @@ function ProjectPage() {
                 className={styles.image}
                 src={project.image}
                 alt={`Image for ${project.title}`}
-                width={300}
-                height={300}
+                width={2000}
+                height={2000}
+                quality={100}
               />
               <div className={styles.title}>
                 <h1>{project.title}</h1>
@@ -42,7 +44,10 @@ function ProjectPage() {
               </div>
             </div>
 
-            <PortableText value={project.body} />
+            <PortableText
+              value={project.body}
+              components={{ types: { image: PostImage } }}
+            />
           </article>
         )}
       </main>
