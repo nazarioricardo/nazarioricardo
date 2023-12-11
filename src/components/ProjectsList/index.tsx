@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import ProjectItem from "./ProjectItem";
-import { getProjects } from "@nr/sanity/query";
-import { Project } from "@nr/types/Project";
+import { getPosts } from "@nr/sanity/query";
+import { Post } from "@nr/types/Post";
 import styles from "./styles.module.css";
 
 function ProjectList() {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [projects, setProjects] = useState<Post[]>([]);
 
   useEffect(() => {
-    getProjects().then((projects) => {
+    getPosts().then((projects) => {
       setProjects(projects);
     });
   }, []);
