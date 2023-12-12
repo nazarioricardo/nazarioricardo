@@ -1,3 +1,10 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project {
   padding: var(--page-padding);
   padding-top: 216px;
@@ -7,6 +14,38 @@
   align-items: flex-start;
   gap: 24px;
   width: 900px;
+}
+
+.project > p > a,
+.project > p,
+.project > p > ul {
+  font-family: var(--font-josefin-sans);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.project > p > a {
+  text-decoration: underline;
+}
+
+.project > p > a:hover {
+  opacity: 0.5;
+}
+
+.project > p > ul {
+  padding-left: 32px;
+}
+
+.project > p > ul > li {
+  padding-bottom: 12px;
+}
+
+.project > h3 {
+  padding-left: 12px;
+}
+
+.project > img {
+  transition: 0.5s;
 }
 
 .header {
@@ -43,7 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 216px);
+  height: 100vh;
   width: 100%;
 }
 

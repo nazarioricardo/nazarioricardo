@@ -1,3 +1,5 @@
+"use client";
+
 import Item from "./Item";
 import Github from "./github.png";
 import LinkedIn from "./linkedin.png";

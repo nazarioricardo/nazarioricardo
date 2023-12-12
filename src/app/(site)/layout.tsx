@@ -1,24 +1,7 @@
 import type { Metadata } from "next";
-import { Jomolhari, Josefin_Slab, Josefin_Sans } from "next/font/google";
+import { jomolhari, josefinSans, josefinSlab } from "./fonts";
 import "./globals.css";
-
-const jomolhari = Jomolhari({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-jomolhari",
-  display: "swap",
-});
-
-const josefinSans = Josefin_Sans({
-  subsets: ["latin"],
-  variable: "--font-josefin-sans",
-  display: "swap",
-});
-
-const josefinSlab = Josefin_Slab({
-  subsets: ["latin"],
-  display: "swap",
-});
+import NavBar from "@nr/components/NavBar";
 
 export const metadata: Metadata = {
   title: "Ricardo Nazario",
@@ -31,8 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={`${jomolhari.variable} ${josefinSans.variable}`} lang="en">
-      <body className={josefinSlab.className}>{children}</body>
+    <html
+      className={`${jomolhari.variable} ${josefinSans.variable} ${josefinSlab.variable}`}
+      lang="en"
+    >
+      <body className={josefinSlab.className}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }

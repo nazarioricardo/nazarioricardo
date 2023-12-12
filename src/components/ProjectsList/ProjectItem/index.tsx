@@ -57,7 +57,7 @@ function ProjectItem({ image, link, title, description }: ProjectItemProps) {
           />
           <h3>{title}</h3>
         </div>
-        <p className={styles.description}>{description}</p>
+        <p>{description}</p>
       </Link>
     </>
   );

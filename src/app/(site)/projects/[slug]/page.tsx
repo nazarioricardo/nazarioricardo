@@ -3,7 +3,6 @@
 import { SyntheticEvent, useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { CircularProgress } from "@mui/material";
-import NavBar from "@nr/components/NavBar";
 import { getSinglePost } from "@nr/sanity/query";
 import { Post } from "@nr/types/Post";
 import Image from "next/image";
@@ -11,7 +10,7 @@ import { PortableText } from "@portabletext/react";
 import PostImage from "@nr/components/PostImage";
 import PostVideo from "@nr/components/PostVideo";
 import styles from "./page.module.css";
-import "./page.css";
+
 function ProjectPage() {
   const params = useParams();
   const [project, setProject] = useState<Post | null>(null);
@@ -33,8 +32,7 @@ function ProjectPage() {
 
   return (
     <>
-      <NavBar />
-      <main>
+      <main className={styles.page}>
         {isFetching && (
           <div className={styles.loaderContainer}>
             <CircularProgress
