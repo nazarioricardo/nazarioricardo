@@ -32,3 +32,7 @@ li {
 h3 {
   padding-left: 12px;
 }
+
+img {
+  transition: 0.5s;
+}

@@ -25,6 +25,11 @@
   width: 174px;
   height: 174px;
   object-fit: cover;
+  opacity: 0;
+}
+
+.loadedImage {
+  opacity: 1;
 }
 
 .imageContainer {

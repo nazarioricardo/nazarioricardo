@@ -6,14 +6,19 @@ const jomolhari = Jomolhari({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-jomolhari",
+  display: "swap",
 });
 
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
   variable: "--font-josefin-sans",
+  display: "swap",
 });
 
-const josefinSlab = Josefin_Slab({ subsets: ["latin"] });
+const josefinSlab = Josefin_Slab({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Ricardo Nazario",
