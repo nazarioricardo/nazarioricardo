@@ -10,9 +10,6 @@ export default defineType({
       name: "url",
       type: "url",
       title: "YouTube Video URL",
-      components: {
-        preview: YouTubePreview,
-      },
     }),
   ],
   preview: {

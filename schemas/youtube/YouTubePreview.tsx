@@ -2,9 +2,9 @@ import type { PreviewProps } from "sanity";
 import { Flex, Text } from "@sanity/ui";
 import YouTubePlayer from "react-player/youtube";
 
-type PreviewYouTubeProps = {
-  url: string;
-} & PreviewProps;
+interface PreviewYouTubeProps extends PreviewProps {
+  url?: string;
+}
 
 function YouTubePreview({ url }: PreviewYouTubeProps) {
   return (
