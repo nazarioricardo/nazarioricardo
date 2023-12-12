@@ -20,6 +20,7 @@ export default function RootLayout({
       lang="en"
     >
       <Head>
+        {/* Favicon */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -41,6 +42,11 @@ export default function RootLayout({
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d1d1d" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#1d1d1d" />
+        {/* Favicon */}
+
+        {/* Fonts for Safari iOS */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <body className={josefinSlab.className}>
         <NavBar />
