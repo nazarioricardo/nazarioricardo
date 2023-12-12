@@ -47,6 +47,10 @@ export default function RootLayout({
         {/* Fonts for Safari iOS */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Jomolhari:ital,wght@0,400&Josefin_Sans:ital,wght@0,400&Josefin_Slab:ital,wght@0,400&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <body className={josefinSlab.className}>
         <NavBar />
