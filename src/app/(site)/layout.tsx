@@ -19,6 +19,13 @@ export default function RootLayout({
       className={`${jomolhari.variable} ${josefinSans.variable} ${josefinSlab.variable}`}
       lang="en"
     >
+      <style jsx global>
+        {`
+          html {
+            font-family: ${josefinSlab.style.fontFamily};
+          }
+        `}
+      </style>
       <Head>
         {/* Favicon */}
         <link
@@ -43,14 +50,6 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#1d1d1d" />
         {/* Favicon */}
-
-        {/* Fonts for Safari iOS */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Jomolhari:ital,wght@0,400&Josefin_Sans:ital,wght@0,400&Josefin_Slab:ital,wght@0,400&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
       <body className={josefinSlab.className}>
         <NavBar />
