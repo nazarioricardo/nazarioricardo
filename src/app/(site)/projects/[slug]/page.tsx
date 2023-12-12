@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import { CircularProgress } from "@mui/material";
 import NavBar from "@nr/components/NavBar";
 import { getSinglePost } from "@nr/sanity/query";
 import { Post } from "@nr/types/Post";
@@ -11,15 +12,17 @@ import PostImage from "@nr/components/PostImage";
 import PostVideo from "@nr/components/PostVideo";
 import styles from "./page.module.css";
 import "./page.css";
-
 function ProjectPage() {
   const params = useParams();
   const [project, setProject] = useState<Post | null>(null);
+  const [isFetching, setIsFetching] = useState(true);
 
   useEffect(() => {
+    setIsFetching(true);
     const { slug } = params;
     getSinglePost(slug as string)
       .then((project: Post) => {
+        setIsFetching(false);
         setProject(project);
       })
       .catch((error: Error) => {
@@ -31,7 +34,17 @@ function ProjectPage() {
     <>
       <NavBar />
       <main>
-        {project && (
+        {isFetching && (
+          <div className={styles.loaderContainer}>
+            <CircularProgress
+              className={styles.loader}
+              thickness={0.5}
+              size={200}
+            />
+          </div>
+        )}
+
+        {!isFetching && project && (
           <article className={styles.project}>
             <div className={styles.header}>
               <Image

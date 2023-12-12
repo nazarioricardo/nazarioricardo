@@ -34,6 +34,22 @@
   gap: 24px;
 }
 
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 216px);
+  width: 100%;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: rgb(var(--foreground-rgb));
+}
+
 @media only screen and (max-width: 1170px) {
   .project {
     padding: 24px;
