@@ -79,6 +79,10 @@
   gap: 24px;
 }
 
+.title > p {
+  font-size: 1.1rem;
+}
+
 .loaderContainer {
   display: flex;
   justify-content: center;
