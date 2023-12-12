@@ -19,13 +19,6 @@ export default function RootLayout({
       className={`${jomolhari.variable} ${josefinSans.variable} ${josefinSlab.variable}`}
       lang="en"
     >
-      <style jsx global>
-        {`
-          html {
-            font-family: ${josefinSlab.style.fontFamily};
-          }
-        `}
-      </style>
       <Head>
         {/* Favicon */}
         <link
