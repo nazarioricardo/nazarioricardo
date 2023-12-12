@@ -15,7 +15,7 @@
   z-index: 9;
 }
 
-.backButtonContainer {
+.header {
   display: none;
 }
 
@@ -32,33 +32,45 @@
 
 @media only screen and (max-width: 1170px) {
   .homeCard {
-    position: absolute;
-    min-height: auto;
-    top: 0;
-    bottom: 0;
-    left: calc(0px - 100vw);
+    position: fixed;
+    min-height: 100vh;
+    top: calc(100% - 48px);
+    left: 0;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 0;
     max-width: 100%;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 48px;
+    padding-left: 48px;
     padding-top: 0;
     padding-bottom: 24px;
+    box-shadow: black 0px 0px 20px 6px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    z-index: 999;
   }
 
   .displayCard {
+    position: absolute;
+    top: 0;
     left: 0;
     transition: 0.5s;
+    border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    overflow-y: scroll;
   }
 
-  .backButtonContainer {
+  .header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 96px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 48px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: var(--font-josefin-sans);
+    font-size: 1rem;
+    color: rgb(var(--foreground-rgb));
   }
 
   .fullHeight {

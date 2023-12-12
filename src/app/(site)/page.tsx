@@ -1,33 +1,24 @@
 "use client";
 
 import { useState } from "react";
-import HomeCard from "@components/HomeCard";
+import HomeCard from "@nr/components/HomeCard";
 import styles from "./page.module.css";
-import NavBar from "@components/NavBar";
+import NavBar from "@nr/components/NavBar";
 import { Download } from "@mui/icons-material";
-import ProjectList from "@components/ProjectsList";
-import LinkButton from "@components/LinkButton";
+import ProjectList from "@nr/components/ProjectsList";
+import LinkButton from "@nr/components/LinkButton";
 import Link from "next/link";
 
 export default function Home() {
-  const [shouldDisplayCard, setShouldDisplayCard] = useState(false);
-  const onClickAboutMe = () => {
-    setShouldDisplayCard(true);
-  };
-
-  const onClickBack = () => {
-    setShouldDisplayCard(false);
-  };
-
   return (
     <>
-      <NavBar onClickAboutMe={onClickAboutMe} />
+      <NavBar />
       <main>
         <div className={styles.content}>
-          <HomeCard shouldDisplay={shouldDisplayCard} onClickBack={onClickBack}>
+          <HomeCard>
             <div>
               <div className={styles.title}>
-                <h1>Ricardo Nazario</h1>
+                <h1 className={styles.name}>Ricardo Nazario</h1>
                 <p className={styles.email}>nazarioricardo@gmail.com</p>
               </div>
 
@@ -69,7 +60,7 @@ export default function Home() {
           </HomeCard>
 
           <section className={`${styles.title} ${styles.mobileTitle}`}>
-            <h1>Ricardo Nazario</h1>
+            <h1 className={styles.name}>Ricardo Nazario</h1>
             <p className={styles.email}>nazarioricardo@gmail.com</p>
             <div className={styles.mobileCvButton}>
               <Link className={styles.link} href="/Ricardo Nazario Resume.pdf">
