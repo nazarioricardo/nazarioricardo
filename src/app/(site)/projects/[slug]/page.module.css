@@ -18,7 +18,7 @@
 
 .project > p > a,
 .project > p,
-.project > p > ul {
+.project > ul {
   font-family: var(--font-josefin-sans);
   font-weight: 300;
   font-size: 1.2rem;
@@ -32,12 +32,13 @@
   opacity: 0.5;
 }
 
-.project > p > ul {
+.project > ul {
   padding-left: 32px;
 }
 
-.project > p > ul > li {
+.project > ul > li {
   padding-bottom: 12px;
+  line-height: 1.5rem;
 }
 
 .project > h3 {
