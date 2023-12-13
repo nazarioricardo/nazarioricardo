@@ -50,7 +50,7 @@ function HomeCard({ children }: HomeCardProps) {
           className={styles.bottomSheetContainer}
           style={{ borderTopRightRadius: 96, borderTopLeftRadius: 96 }}
         >
-          <Sheet.Header onTap={snap} style={{ height: 96 }} />
+          <Sheet.Header onTap={snap} style={{ paddingBottom: 96 }} />
           <Sheet.Content>{children}</Sheet.Content>
         </Sheet.Container>
       </Sheet>
