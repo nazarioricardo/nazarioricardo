@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { jomolhari, josefinSans, josefinSlab } from "./fonts";
-import "./globals.css";
 import NavBar from "@nr/components/NavBar";
 import Head from "next/head";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ricardo Nazario",
