@@ -5,6 +5,7 @@
   gap: 12px;
   align-items: center;
   background-color: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
   font-family: var(--font-josefin-sans);
   font-size: 1.1rem;
   min-height: 52px;
@@ -13,7 +14,6 @@
   padding-top: 3px; /* This is weird but it fixes this aesthetic */
   border: none;
   border-radius: 26px;
-  color: rgb(var(--foreground-rgb));
   cursor: pointer;
   text-align: center;
 }
