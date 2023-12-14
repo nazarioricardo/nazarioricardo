@@ -58,8 +58,9 @@
 @media only screen and (max-width: 1170px) {
   .project {
     flex-direction: column;
-    padding: 48px;
+    padding: 24px;
     gap: 12px;
+    border-radius: 50px;
   }
 
   .imageContainer {
