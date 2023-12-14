@@ -55,42 +55,14 @@
   font-size: 1.2rem;
 }
 
-.mobileProject {
-  display: none;
-}
-
 @media only screen and (max-width: 1170px) {
-  .mobileProject {
-    display: flex;
+  .project {
     flex-direction: column;
-    gap: 16px;
-    border-top: 1px solid rgba(var(--foreground-rgb), 0.3);
-    padding-left: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .mobileHeader {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-  }
-
-  .mobileProject:hover {
-    background-color: rgb(var(--hover-rgb));
-  }
-
-  .image {
-    width: 96px;
-    height: 96px;
+    padding: 48px;
+    gap: 12px;
   }
 
   .imageContainer {
-    width: 96px;
-  }
-
-  .project {
-    display: none;
+    padding: 0;
   }
 }
