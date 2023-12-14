@@ -15,8 +15,43 @@
   z-index: 9;
 }
 
-.bottomSheet {
-  display: none;
+.title {
+  padding-bottom: 1rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-family: var(--font-jomolhari), "Hoeffler Text", serif;
+  font-weight: 400;
+}
+
+.email {
+  font-size: 20px;
+}
+
+.bio {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding-bottom: 2rem;
+}
+
+.bottomContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 24px;
+  gap: 24px;
+}
+
+.githubLink,
+.link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.githubLink:hover,
+.link:hover {
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -28,25 +63,12 @@
 
 @media only screen and (max-width: 1170px) {
   .homeCard {
-    display: none;
-  }
-
-  .bottomSheet {
-    display: flex;
-  }
-
-  .bottomSheetContainer {
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    background-color: rgb(var(--surface-rgb));
-    /* padding-top: 96px; */
-    padding-right: 48px;
-    padding-left: 48px;
-    background: linear-gradient(rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
-    box-shadow: black 0px 0px 20px 6px;
+    min-width: 33%;
+    max-width: 100%;
+    min-height: auto;
+    height: auto;
+    border-radius: 50px;
+    z-index: 0;
   }
 
   .header {
@@ -61,7 +83,16 @@
     color: rgb(var(--foreground-rgb));
   }
 
-  .fullHeight {
-    height: 100vh;
+  .link {
+    min-height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .title > h1 {
+    font-size: 2rem;
   }
 }

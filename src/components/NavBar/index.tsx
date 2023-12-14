@@ -1,7 +1,7 @@
 import Socials from "@nr/components/Socials";
-import styles from "./styles.module.css";
 import Link from "next/link";
 import R from "@nr/icons/R";
+import styles from "./styles.module.css";
 
 function NavBar() {
   return (
