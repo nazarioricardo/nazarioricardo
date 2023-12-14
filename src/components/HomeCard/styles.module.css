@@ -25,17 +25,13 @@
   font-weight: 400;
 }
 
-.email {
-  font-size: 20px;
-}
-
 .bottomContent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 24px;
-  gap: 48px;
-  font-size: 0.7rem;
+  gap: 24px;
+  font-size: 0.8rem;
 }
 
 .githubLink,

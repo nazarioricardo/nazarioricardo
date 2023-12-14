@@ -29,13 +29,11 @@ function HomeCard() {
             <b>Dear Visitor,</b>
           </p>
           <br />
-
           <p>
             This page launched December 9, 2023. There are a few things I still
             need to add.
           </p>
           <br />
-
           <p>
             {`If you're curious, check out the current `}
             <Link
