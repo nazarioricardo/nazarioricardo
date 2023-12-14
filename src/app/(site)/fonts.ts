@@ -1,4 +1,4 @@
-import { Jomolhari, Josefin_Slab, Josefin_Sans } from "next/font/google";
+import { Jomolhari, Josefin_Sans } from "next/font/google";
 
 export const jomolhari = Jomolhari({
   weight: "400",
@@ -8,13 +8,8 @@ export const jomolhari = Jomolhari({
 });
 
 export const josefinSans = Josefin_Sans({
+  weight: "300",
   subsets: ["latin"],
   variable: "--font-josefin-sans",
-  display: "swap",
-});
-
-export const josefinSlab = Josefin_Slab({
-  subsets: ["latin"],
-  variable: "--font-josefin-slab",
   display: "swap",
 });

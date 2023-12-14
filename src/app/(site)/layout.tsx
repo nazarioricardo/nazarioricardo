@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { jomolhari, josefinSans, josefinSlab } from "./fonts";
+import { jomolhari, josefinSans } from "./fonts";
 import NavBar from "@nr/components/NavBar";
 import Head from "next/head";
 import "./globals.css";
@@ -15,10 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      className={`${jomolhari.variable} ${josefinSans.variable} ${josefinSlab.variable}`}
-      lang="en"
-    >
+    <html className={`${jomolhari.variable} ${josefinSans.variable}`} lang="en">
       <Head>
         {/* Favicon */}
         <link
@@ -44,7 +41,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#1d1d1d" />
         {/* Favicon */}
       </Head>
-      <body className={josefinSlab.className}>
+      <body>
         <NavBar />
         {children}
       </body>
