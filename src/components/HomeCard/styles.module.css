@@ -1,13 +1,13 @@
 .homeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   min-height: 100vh;
   min-width: 33%;
   max-width: 40%;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
   background-color: rgb(var(--surface-rgb));
   padding: var(--page-padding);
   background: linear-gradient(rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
@@ -25,17 +25,13 @@
   font-weight: 400;
 }
 
-.email {
-  font-size: 20px;
-}
-
 .bottomContent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 24px;
-  gap: 48px;
-  font-size: 0.7rem;
+  gap: 24px;
+  font-size: 0.8rem;
 }
 
 .githubLink,
@@ -60,7 +56,7 @@
   .homeCard {
     min-width: 100%;
     max-width: 100%;
-    padding: 32px 32px;
+    padding: 32px;
     min-height: auto;
     height: auto;
     border-radius: 50px;

@@ -27,7 +27,7 @@
   padding: 0;
   margin: 0;
   text-underline-offset: 0.2em;
-  font-family: var(--font-josefin-sans), "Hiragano Sans", "Helvetica Neue",
+  font-family: var(--font-josefin-sans), "Gill Sans", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   font-weight: 200;
 }
@@ -76,5 +76,15 @@ img {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+/* For Safari iOS */
+@media only screen and (max-width: 1170px) {
+  _::-webkit-full-page-media,
+  _:future,
+  :root * {
+    font-family: "Gill Sans", "Helvetica Neue";
+    font-weight: 100;
   }
 }

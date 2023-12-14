@@ -99,16 +99,28 @@
 }
 
 @media only screen and (max-width: 1170px) {
+  .header {
+    border-radius: 50px;
+    padding: 32px;
+    gap: 12px;
+  }
+
   .project {
     padding: 24px;
-    padding-top: 96px;
     width: 100%;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
   }
 
   .image {
     width: 100%;
     height: auto;
     max-width: 200px;
+  }
+
+  .page {
+    padding-top: 96px;
   }
 }
 
