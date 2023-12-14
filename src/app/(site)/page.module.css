@@ -1,80 +1,16 @@
-.title {
-  padding-bottom: 1rem;
-}
-
-.name {
-  font-size: 3rem;
-  font-family: var(--font-jomolhari), "Hoeffler Text", serif;
-  font-weight: 400;
-}
-
-.email {
-  font-size: 20px;
-}
-
-.bio {
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-  padding-bottom: 2rem;
-}
-
 .content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.mobileTitle {
-  display: none;
-}
-
-.cardCvButton {
-  padding-top: 24px;
-}
-
-.githubLink,
-.link {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.githubLink:hover,
-.link:hover {
-  opacity: 0.5;
+  padding-top: 0;
 }
 
 @media only screen and (max-width: 1170px) {
   .content {
+    padding-top: 96px;
     flex-direction: column;
     padding-right: 24px;
     padding-left: 24px;
-  }
-
-  .mobileCvButton {
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .link {
-    min-height: 52px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .mobileTitle {
-    padding-top: 96px;
-    padding-bottom: 0;
-    display: inline-block;
-  }
-
-  .mobileTitle > h1,
-  .title > h1 {
-    font-size: 2rem;
   }
 }
