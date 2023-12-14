@@ -4,12 +4,11 @@
 
 .name {
   font-size: 3rem;
-  font-family: "Hoeffler Text", serif;
+  font-family: var(--font-jomolhari), "Hoeffler Text", serif;
   font-weight: 400;
 }
 
 .email {
-  /* font-family: var(--font-josefin-sans); */
   font-size: 20px;
 }
 
@@ -61,7 +60,6 @@
 
   .link {
     min-height: 52px;
-    font-family: var(--font-josefin-sans);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
