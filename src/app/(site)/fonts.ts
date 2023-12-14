@@ -8,6 +8,7 @@ export const jomolhari = Jomolhari({
 });
 
 export const josefinSans = Josefin_Sans({
+  weight: "300",
   subsets: ["latin"],
   variable: "--font-josefin-sans",
   display: "swap",

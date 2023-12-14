@@ -6,7 +6,7 @@
   align-items: center;
   background-color: rgb(var(--background-rgb));
   color: rgb(var(--foreground-rgb));
-  font-family: var(--font-josefin-sans);
+  /* font-family: var(--font-josefin-sans); */
   font-size: 1.1rem;
   min-height: 52px;
   padding-left: 26px;

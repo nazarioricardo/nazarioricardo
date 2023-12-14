@@ -44,7 +44,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#1d1d1d" />
         {/* Favicon */}
       </Head>
-      <body className={josefinSlab.className}>
+      <body>
         <NavBar />
         {children}
       </body>

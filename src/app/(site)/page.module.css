@@ -4,12 +4,12 @@
 
 .name {
   font-size: 3rem;
-  font-family: var(--font-jomolhari);
+  font-family: "Hoeffler Text", serif;
   font-weight: 400;
 }
 
 .email {
-  font-family: var(--font-josefin-sans);
+  /* font-family: var(--font-josefin-sans); */
   font-size: 20px;
 }
 
