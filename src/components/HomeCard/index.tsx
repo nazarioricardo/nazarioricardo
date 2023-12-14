@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 function HomeCard() {
   return (
     <section className={styles.homeCard}>
-      <div className={styles.cardContent}>
+      <div>
         <div className={styles.title}>
           <h1 className={styles.name}>Ricardo Nazario</h1>
           <p className={styles.email}>nazarioricardo@gmail.com</p>
@@ -22,37 +22,37 @@ function HomeCard() {
   years, making products in the music, medical, and energy
   industries.`}
         </p>
-        <div className={styles.bottomContent}>
-          <div>
-            <p>
-              <b>Dear Visitor,</b>
-            </p>
-            <br />
+      </div>
+      <div className={styles.bottomContent}>
+        <div>
+          <p>
+            <b>Dear Visitor,</b>
+          </p>
+          <br />
 
-            <p>
-              This page launched December 9, 2023. There are a few things I
-              still need to add.
-            </p>
-            <br />
+          <p>
+            This page launched December 9, 2023. There are a few things I still
+            need to add.
+          </p>
+          <br />
 
-            <p>
-              {`If you're curious, check out the current `}
-              <Link
-                className={styles.githubLink}
-                href="https://github.com/nazarioricardo/nazarioricardo/issues"
-                target="_blank"
-              >
-                github issues
-              </Link>
-              .
-            </p>
-          </div>
-          <LinkButton
-            text="View C.V."
-            href="/Ricardo Nazario Resume.pdf"
-            Icon={Download}
-          />
+          <p>
+            {`If you're curious, check out the current `}
+            <Link
+              className={styles.githubLink}
+              href="https://github.com/nazarioricardo/nazarioricardo/issues"
+              target="_blank"
+            >
+              github issues
+            </Link>
+            .
+          </p>
         </div>
+        <LinkButton
+          text="View C.V."
+          href="/Ricardo Nazario Resume.pdf"
+          Icon={Download}
+        />
       </div>
     </section>
   );

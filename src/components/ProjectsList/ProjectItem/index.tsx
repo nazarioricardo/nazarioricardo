@@ -1,7 +1,7 @@
-import Image from "next/image";
-import styles from "./styles.module.css";
-import Link from "next/link";
 import { SyntheticEvent, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./styles.module.css";
 
 type ProjectItemProps = {
   image: string;
