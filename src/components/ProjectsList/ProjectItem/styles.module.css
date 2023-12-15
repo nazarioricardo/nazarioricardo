@@ -1,13 +1,13 @@
 .project {
-  min-height: 232px;
-  width: 100%;
-  border-radius: 65px;
   display: flex;
   flex-direction: row;
-  gap: 54px;
   justify-content: flex-start;
   align-items: center;
   padding: 0 48px;
+  min-height: 232px;
+  width: 100%;
+  border-radius: 65px;
+  gap: 32px;
 }
 
 .project:hover {
@@ -34,9 +34,9 @@
 
 .imageContainer {
   position: relative;
-  height: 100%;
-  width: 174px;
-  padding: 29px 0;
+  min-height: 174px;
+  min-width: 174px;
+  padding: 29px;
 }
 
 .content {

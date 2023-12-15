@@ -10,22 +10,23 @@ type ImageFadeInProps = {
   height?: number;
   width?: number;
   quality?: number;
+  fill?: boolean;
 };
 
 function ImageFadeIn({
   src,
   alt,
-  height = 2000,
-  width = 2000,
+  height,
+  width,
   quality = 75,
+  fill = true,
 }: ImageFadeInProps) {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
   return (
     <Image
       className={`${styles.image} ${imageIsLoaded && styles.loadedImage}`}
       src={src}
-      width={width}
-      height={height}
+      fill={fill}
       alt={alt}
       quality={quality}
       onLoad={(event: SyntheticEvent<HTMLImageElement, Event>) => {

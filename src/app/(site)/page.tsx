@@ -1,5 +1,3 @@
-"use client";
-
 import HomeCard from "@nr/components/HomeCard";
 import ProjectList from "@nr/components/ProjectsList";
 import { getProjects } from "@nr/sanity/query";
