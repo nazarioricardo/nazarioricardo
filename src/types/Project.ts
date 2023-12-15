@@ -1,6 +1,6 @@
 import { PortableTextBlock } from "sanity";
 
-export type PostListItem = {
+export type ProjectListItem = {
   _id: string;
   title: string;
   description: string;
@@ -8,7 +8,7 @@ export type PostListItem = {
   image: string;
 };
 
-export type Post = {
+export type Project = {
   body: PortableTextBlock[];
   categories: string[];
-} & PostListItem;
+} & ProjectListItem;

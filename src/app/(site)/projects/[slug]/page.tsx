@@ -4,23 +4,23 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { CircularProgress } from "@mui/material";
 import { getSingleProject } from "@nr/sanity/query";
-import { Post } from "@nr/types/Post";
+import { Project } from "@nr/types/Project";
 import { PortableText } from "@portabletext/react";
-import PostImage from "@nr/components/ProjectImage";
-import PostVideo from "@nr/components/PostVideo";
+import ProjectImage from "@nr/components/ProjectImage";
+import ProjectVideo from "@nr/components/ProjectVideo";
 import styles from "./page.module.css";
 import ImageFadeIn from "@nr/components/ImageFadeIn";
 
 function ProjectPage() {
   const params = useParams();
-  const [project, setProject] = useState<Post | null>(null);
+  const [project, setProject] = useState<Project | null>(null);
   const [isFetching, setIsFetching] = useState(true);
 
   useEffect(() => {
     setIsFetching(true);
     const { slug } = params;
     getSingleProject(slug as string)
-      .then((project: Post) => {
+      .then((project: Project) => {
         setIsFetching(false);
         setProject(project);
       })
@@ -61,8 +61,8 @@ function ProjectPage() {
               value={project.body}
               components={{
                 types: {
-                  image: PostImage,
-                  youtube: PostVideo,
+                  image: ProjectImage,
+                  youtube: ProjectVideo,
                 },
               }}
             />

@@ -1,11 +1,11 @@
 import ReactPlayer from "react-player";
 import styles from "./styles.module.css";
 
-type PostVideoProps = {
+type ProjectVideoProps = {
   value: { url: string };
 };
 
-function PostVideo({ value: { url } }: PostVideoProps) {
+function ProjectVideo({ value: { url } }: ProjectVideoProps) {
   return (
     <div className={styles.postVideo}>
       <ReactPlayer url={url} />
@@ -13,4 +13,4 @@ function PostVideo({ value: { url } }: PostVideoProps) {
   );
 }
 
-export default PostVideo;
+export default ProjectVideo;

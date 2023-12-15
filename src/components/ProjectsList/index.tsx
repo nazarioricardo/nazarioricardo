@@ -1,5 +1,5 @@
 import ProjectItem from "./ProjectItem";
-import { Post } from "@nr/types/Post";
+import { Post } from "@nr/types/Project";
 import styles from "./styles.module.css";
 
 type ProjectsListProps = {
