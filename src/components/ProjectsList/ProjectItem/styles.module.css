@@ -20,22 +20,11 @@
   }
 }
 
-.image {
-  border-radius: 50%;
-  width: 174px;
-  height: 174px;
-  object-fit: cover;
-  opacity: 0;
-}
-
-.loadedImage {
-  opacity: 1;
-}
-
 .imageContainer {
   position: relative;
   min-height: 174px;
   min-width: 174px;
+  border-radius: 50%;
   padding: 29px;
 }
 

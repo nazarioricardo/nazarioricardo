@@ -10,6 +10,7 @@ import { PortableText } from "@portabletext/react";
 import PostImage from "@nr/components/PostImage";
 import PostVideo from "@nr/components/PostVideo";
 import styles from "./page.module.css";
+import ImageFadeIn from "@nr/components/ImageFadeIn";
 
 function ProjectPage() {
   const params = useParams();
@@ -46,24 +47,12 @@ function ProjectPage() {
         {!isFetching && project && (
           <article className={styles.project}>
             <div className={styles.header}>
-              <Image
-                className={`${styles.image} ${
-                  didLoadImage && styles.loadedImage
-                }`}
-                src={project.image}
-                alt={`Image for ${project.title}`}
-                width={2000}
-                height={2000}
-                quality={100}
-                onLoad={(event: SyntheticEvent<HTMLImageElement, Event>) => {
-                  const { currentTarget } = event;
-
-                  // next/image use an 1x1 px git as placeholder. We only want the onLoad event on the actual image
-                  if (currentTarget.src.indexOf("data:image/gif;base64") < 0) {
-                    setDidLoadImage(true);
-                  }
-                }}
-              />
+              <div className={styles.imageContainer}>
+                <ImageFadeIn
+                  src={project.image}
+                  alt={`Image for ${project.title}`}
+                />
+              </div>
               <div className={styles.title}>
                 <h1>{project.title}</h1>
                 <p>{project.description}</p>
