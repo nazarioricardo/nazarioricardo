@@ -1,6 +1,5 @@
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import styles from "./styles.module.css";
-import { SyntheticEvent, useState } from "react";
 import ImageFadeIn from "@nr/components/ImageFadeIn";
 
 type ItemProps = {
@@ -10,7 +9,6 @@ type ItemProps = {
 };
 
 function Item({ src, link, alt }: ItemProps) {
-  const [didLoadImage, setDidLoadImage] = useState(false);
   return (
     <li className={styles.socialsItem}>
       <a href={link} target="_blank">

@@ -1,11 +1,10 @@
 "use client";
 
-import { SyntheticEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { CircularProgress } from "@mui/material";
 import { getSingleProject } from "@nr/sanity/query";
 import { Post } from "@nr/types/Post";
-import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import PostImage from "@nr/components/PostImage";
 import PostVideo from "@nr/components/PostVideo";
@@ -16,7 +15,6 @@ function ProjectPage() {
   const params = useParams();
   const [project, setProject] = useState<Post | null>(null);
   const [isFetching, setIsFetching] = useState(true);
-  const [didLoadImage, setDidLoadImage] = useState(false);
 
   useEffect(() => {
     setIsFetching(true);
