@@ -6,9 +6,9 @@ import { schemaTypes } from "./schemas";
 export default defineConfig({
   name: "default",
   title: "nazarioricardo",
-  projectId: "8e3toju4",
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID as string,
   dataset: "production",
-  basePath: "/studio",
+  basePath: process.env.NEXT_PUBLIC_SANITY_BASE_PATH as string,
   plugins: [deskTool(), visionTool()],
   schema: {
     types: schemaTypes,
