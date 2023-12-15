@@ -4,7 +4,7 @@ You've reached my github page!
 
 It also happens to be the README for my personal website's repository.
 
-You can find it at [https://nazarioricardo.vercel.app](https://nazarioricardo.vercel.app) for now.
+You can find it at [https://nazarioricardo.com](https://nazarioricardo.com).
 
 If you wanna run my site locally (for some reason) skip a bit further down. Otherwise, read a bit about me.
 
