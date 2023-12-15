@@ -3,7 +3,7 @@
 import { SyntheticEvent, useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { CircularProgress } from "@mui/material";
-import { getSinglePost } from "@nr/sanity/query";
+import { getSingleProject } from "@nr/sanity/query";
 import { Post } from "@nr/types/Post";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
@@ -20,7 +20,7 @@ function ProjectPage() {
   useEffect(() => {
     setIsFetching(true);
     const { slug } = params;
-    getSinglePost(slug as string)
+    getSingleProject(slug as string)
       .then((project: Post) => {
         setIsFetching(false);
         setProject(project);
