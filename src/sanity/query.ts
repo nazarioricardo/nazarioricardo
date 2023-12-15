@@ -1,7 +1,7 @@
 import { groq } from "next-sanity";
 import client from "./client";
 
-export async function getPosts() {
+export async function getProjects() {
   return await client.fetch(
     groq`*[_type == "post"]{
       _id, 
@@ -14,7 +14,7 @@ export async function getPosts() {
   );
 }
 
-export async function getSinglePost(slug: string) {
+export async function getSingleProject(slug: string) {
   return await client.fetch(
     groq`*[_type == "post" && slug.current == $slug][0]{
       _id,

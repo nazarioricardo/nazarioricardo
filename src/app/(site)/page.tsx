@@ -1,19 +1,14 @@
-"use client";
-
 import HomeCard from "@nr/components/HomeCard";
-import styles from "./page.module.css";
-import { Download } from "@mui/icons-material";
 import ProjectList from "@nr/components/ProjectsList";
-import LinkButton from "@nr/components/LinkButton";
-import Link from "next/link";
+import { getProjects } from "@nr/sanity/query";
+import styles from "./page.module.css";
 
-export default function Home() {
+export default async function Home() {
+  const projects = await getProjects();
   return (
-    <>
-      <main className={styles.content}>
-        <HomeCard />
-        <ProjectList />
-      </main>
-    </>
+    <main className={styles.content}>
+      <HomeCard />
+      <ProjectList projects={projects} />
+    </main>
   );
 }

@@ -1,45 +1,25 @@
-import { useEffect, useState } from "react";
 import ProjectItem from "./ProjectItem";
-import { getPosts } from "@nr/sanity/query";
 import { Post } from "@nr/types/Post";
 import styles from "./styles.module.css";
-import { CircularProgress } from "@mui/material";
 
-function ProjectList() {
-  const [isFetching, setIsFetching] = useState(true);
-  const [projects, setProjects] = useState<Post[]>([]);
+type ProjectsListProps = {
+  projects: Post[];
+};
 
-  useEffect(() => {
-    setIsFetching(true);
-    getPosts().then((projects) => {
-      setIsFetching(false);
-      setProjects(projects);
-    });
-  }, []);
-
+function ProjectList({ projects }: ProjectsListProps) {
   return (
     <section className={styles.projectList}>
-      {isFetching && (
-        <div className={styles.loaderContainer}>
-          <CircularProgress
-            className={styles.loader}
-            thickness={0.5}
-            size={200}
+      {projects.map((project) => {
+        return (
+          <ProjectItem
+            key={project._id}
+            image={project.image}
+            title={project.title}
+            description={project.description}
+            link={`/projects/${project.slug}`}
           />
-        </div>
-      )}
-      {!isFetching &&
-        projects.map((project) => {
-          return (
-            <ProjectItem
-              key={project._id}
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              link={`/projects/${project.slug}`}
-            />
-          );
-        })}
+        );
+      })}
     </section>
   );
 }

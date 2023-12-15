@@ -1,23 +1,34 @@
+"use client";
+
 import { SyntheticEvent, useState } from "react";
-import NextImage, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./styles.module.css";
 
-type ImageProps = {
+type ImageFadeInProps = {
   src: string | StaticImageData;
   alt: string;
   height?: number;
   width?: number;
+  quality?: number;
+  fill?: boolean;
 };
 
-function Image({ src, alt, height = 2000, width = 2000 }: ImageProps) {
+function ImageFadeIn({
+  src,
+  alt,
+  height,
+  width,
+  quality = 75,
+  fill = true,
+}: ImageFadeInProps) {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
   return (
-    <NextImage
+    <Image
       className={`${styles.image} ${imageIsLoaded && styles.loadedImage}`}
       src={src}
-      width={width}
-      height={height}
+      fill={fill}
       alt={alt}
+      quality={quality}
       onLoad={(event: SyntheticEvent<HTMLImageElement, Event>) => {
         const { currentTarget } = event;
         event.preventDefault();
@@ -31,4 +42,4 @@ function Image({ src, alt, height = 2000, width = 2000 }: ImageProps) {
   );
 }
 
-export default Image;
+export default ImageFadeIn;
