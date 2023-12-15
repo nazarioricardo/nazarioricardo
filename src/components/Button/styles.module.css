@@ -9,7 +9,7 @@
   min-height: 52px;
   padding-left: 26px;
   padding-right: 26px;
-  padding-top: 3px; /* This is weird but it fixes this aesthetic */
+  padding-top: 3px; /* This is weird but it fixes the visual imbalance */
   border: none;
   border-radius: 26px;
   color: rgb(var(--foreground-rgb));
