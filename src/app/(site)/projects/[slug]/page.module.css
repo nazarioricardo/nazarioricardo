@@ -55,7 +55,7 @@
   align-items: center;
   gap: 32px;
   border-radius: 100px;
-  background: linear-gradient(45deg, rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
+  background: var(--title-gradient);
   padding: 48px;
 }
 

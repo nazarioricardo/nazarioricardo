@@ -6,7 +6,7 @@ import { CircularProgress } from "@mui/material";
 import { getSingleProject } from "@nr/sanity/query";
 import { Post } from "@nr/types/Post";
 import { PortableText } from "@portabletext/react";
-import PostImage from "@nr/components/PostImage";
+import PostImage from "@nr/components/ProjectImage";
 import PostVideo from "@nr/components/PostVideo";
 import styles from "./page.module.css";
 import ImageFadeIn from "@nr/components/ImageFadeIn";
