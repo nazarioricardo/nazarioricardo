@@ -12,6 +12,7 @@
   --padding-horizontal: 5.5rem;
   --padding-vertical: 4.3rem;
   --page-padding: var(--padding-vertical) var(--padding-horizontal);
+  --nav-bar-height: 216px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,5 +87,6 @@ img {
   :root * {
     font-family: "Gill Sans", "Helvetica Neue";
     font-weight: 100;
+    --nav-bar-height: 96px;
   }
 }

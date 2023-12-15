@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 216px;
+  height: var(--nav-bar-height);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,7 +21,7 @@
 
 @media only screen and (max-width: 1170px) {
   .navBar {
-    height: 96px;
+    height: var(--nav-bar-height);
     padding-left: 0;
     padding-right: 0;
     gap: 12px;

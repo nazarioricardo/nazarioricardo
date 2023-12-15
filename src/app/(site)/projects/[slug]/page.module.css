@@ -7,7 +7,7 @@
 
 .project {
   padding: var(--page-padding);
-  padding-top: 216px;
+  padding-top: var(--nav-bar-height);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -111,7 +111,7 @@
   }
 
   .page {
-    padding-top: 96px;
+    padding-top: var(--nav-bar-height);
   }
 }
 
