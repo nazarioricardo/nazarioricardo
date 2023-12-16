@@ -10,6 +10,7 @@ import ProjectImage from "@nr/components/ProjectImage";
 import ProjectVideo from "@nr/components/ProjectVideo";
 import styles from "./page.module.css";
 import ImageFadeIn from "@nr/components/ImageFadeIn";
+import TitleCard from "@nr/components/TitleCard";
 
 function ProjectPage() {
   const params = useParams();
@@ -44,7 +45,7 @@ function ProjectPage() {
 
         {!isFetching && project && (
           <article className={styles.project}>
-            <div className={styles.header}>
+            <TitleCard className={styles.header}>
               <div className={styles.imageContainer}>
                 <ImageFadeIn
                   src={project.image}
@@ -55,7 +56,7 @@ function ProjectPage() {
                 <h1>{project.title}</h1>
                 <p>{project.description}</p>
               </div>
-            </div>
+            </TitleCard>
 
             <PortableText
               value={project.body}

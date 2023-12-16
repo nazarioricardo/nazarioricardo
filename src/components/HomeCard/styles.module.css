@@ -6,12 +6,8 @@
   min-height: 100vh;
   min-width: 33%;
   max-width: 40%;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  background-color: rgb(var(--surface-rgb));
-  padding: var(--page-padding);
-  background: var(--title-gradient);
-  transition: 0.5s;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
   z-index: 9;
 }
 
@@ -59,7 +55,7 @@
     padding: 32px;
     min-height: auto;
     height: auto;
-    border-radius: 50px;
+    border-radius: 50px !important;
     z-index: 0;
   }
 
