@@ -14,6 +14,10 @@
   --page-padding: var(--padding-vertical) var(--padding-horizontal);
   --nav-bar-height: 216px;
   --title-gradient: linear-gradient(rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
+  /* --screen-size-1: 1360px;
+  --screen-size-2: 1170px;
+  --screen-size-3: 800px;
+  --screen-size-4: 600px; */
 }
 
 @media (prefers-color-scheme: dark) {
