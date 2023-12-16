@@ -99,14 +99,13 @@
 @media only screen and (max-width: 1170px) {
   .header {
     border-radius: 50px;
-    padding: 32px;
+    padding: var(--page-padding);
   }
 
   .project {
     padding: 24px;
     width: 100%;
     flex-direction: column;
-    padding: 24px;
     gap: 12px;
   }
 
