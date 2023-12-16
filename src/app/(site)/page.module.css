@@ -8,9 +8,9 @@
 
 @media only screen and (max-width: 1170px) {
   .content {
-    padding-top: 96px;
+    padding-top: var(--nav-bar-height);
     flex-direction: column;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-left: var(--padding-horizontal);
+    padding-right: var(--padding-horizontal);
   }
 }

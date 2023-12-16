@@ -1,0 +1,22 @@
+.titleCard {
+  background-color: rgb(var(--surface-rgb));
+  padding: var(--page-padding);
+  background: linear-gradient(rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
+  transition: 0.5s;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+@media only screen and (max-width: 1170px) {
+  .titleCard {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 32px;
+    min-height: auto;
+    height: auto;
+    border-radius: 50px;
+    z-index: 0;
+  }
+}

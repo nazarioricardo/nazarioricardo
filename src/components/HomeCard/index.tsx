@@ -2,10 +2,11 @@ import { Download } from "@mui/icons-material";
 import LinkButton from "@nr/components/LinkButton";
 import Link from "next/link";
 import styles from "./styles.module.css";
+import TitleCard from "../TitleCard";
 
 function HomeCard() {
   return (
-    <section className={styles.homeCard}>
+    <TitleCard className={styles.homeCard}>
       <div>
         <div className={styles.title}>
           <h1 className={styles.name}>Ricardo Nazario</h1>
@@ -52,7 +53,7 @@ function HomeCard() {
           Icon={Download}
         />
       </div>
-    </section>
+    </TitleCard>
   );
 }
 

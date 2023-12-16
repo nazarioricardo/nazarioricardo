@@ -7,7 +7,7 @@
 
 .project {
   padding: var(--page-padding);
-  padding-top: 216px;
+  padding-top: var(--nav-bar-height);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -55,7 +55,7 @@
   align-items: center;
   gap: 32px;
   border-radius: 100px;
-  background: linear-gradient(45deg, rgba(0, 117, 124, 1), rgba(0, 79, 123, 1));
+  background: var(--title-gradient);
   padding: 48px;
 }
 
@@ -99,19 +99,18 @@
 @media only screen and (max-width: 1170px) {
   .header {
     border-radius: 50px;
-    padding: 32px;
+    padding: var(--page-padding);
   }
 
   .project {
     padding: 24px;
     width: 100%;
     flex-direction: column;
-    padding: 24px;
     gap: 12px;
   }
 
   .page {
-    padding-top: 96px;
+    padding-top: var(--nav-bar-height);
   }
 }
 

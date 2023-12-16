@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 import { SyntheticEvent, useState } from "react";
 // https://www.sanity.io/answers/adding-images-to-post-content-using-portable-text-and-sanity-image-url-builder-
 
-type PostImageProps = {
+type ProjectImageProps = {
   value: {
     alt: string;
     asset: {
@@ -15,10 +15,10 @@ type PostImageProps = {
   };
 };
 
-function PostImage({ value }: PostImageProps) {
+function ProjectImage({ value }: ProjectImageProps) {
   const [didLoadImage, setDidLoadImage] = useState(false);
   return (
-    <div className={styles.postImage}>
+    <div className={styles.projectImage}>
       <Image
         className={`${styles.image} ${didLoadImage && styles.loadedImage}`}
         src={urlBuilder(client)
@@ -45,4 +45,4 @@ function PostImage({ value }: PostImageProps) {
   );
 }
 
-export default PostImage;
+export default ProjectImage;
