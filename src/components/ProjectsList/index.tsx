@@ -1,9 +1,9 @@
 import ProjectItem from "./ProjectItem";
-import { Post } from "@nr/types/Project";
+import { Project } from "@nr/types/Project";
 import styles from "./styles.module.css";
 
 type ProjectsListProps = {
-  projects: Post[];
+  projects: Project[];
 };
 
 function ProjectList({ projects }: ProjectsListProps) {
