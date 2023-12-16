@@ -8,7 +8,14 @@ type ProjectVideoProps = {
 function ProjectVideo({ value: { url } }: ProjectVideoProps) {
   return (
     <div className={styles.postVideo}>
-      <ReactPlayer url={url} />
+      <ReactPlayer
+        url={url}
+        style={{
+          borderRadius: 50,
+          overflow: "hidden",
+        }}
+        controls
+      />
     </div>
   );
 }
