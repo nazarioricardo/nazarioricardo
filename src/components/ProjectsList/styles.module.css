@@ -1,10 +1,10 @@
 .projectList {
   padding-top: var(--nav-bar-height);
   width: 100%;
-  animation: fadeIn 0.5s;
+  animation: fadeInScroll 0.5s;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInScroll {
   0% {
     opacity: 0;
     transform: translateY(100px);
