@@ -2,7 +2,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import ImageFadeIn from "../index"; // adjust this import according to your file structure
+import ImageFadeIn from "../index";
 
 describe("ImageFadeIn", () => {
   const SRC = "/path/to/image.jpg";
@@ -21,6 +21,4 @@ describe("ImageFadeIn", () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-
-  // Add more tests as needed
 });
