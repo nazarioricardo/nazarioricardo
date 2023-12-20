@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeCard matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="titleCard homeCard"
+  >
+    <div>
+      <div
+        class="title"
+      >
+        <h1
+          class="name"
+        >
+          Ricardo Nazario
+        </h1>
+        <p
+          class="email"
+        >
+          nazarioricardo@gmail.com
+        </p>
+      </div>
+      <p
+        class="bio"
+      >
+        Hello. I'm a software developer who loves creating joyful products
+  that make life a little nicer for everyone.
+      </p>
+      <br />
+      <p
+        class="bio"
+      >
+        I've worked as a full stack and mobile developer for the past 6
+  years, making products in the music, medical, and energy
+  industries.
+      </p>
+    </div>
+    <div
+      class="bottomContent"
+    >
+      <div>
+        <p>
+          <b>
+            Dear Visitor,
+          </b>
+        </p>
+        <br />
+        <p>
+          This page launched December 9, 2023. There are a few things I still need to add.
+        </p>
+        <br />
+        <p>
+          If you're curious, check out the current 
+          <a
+            class="githubLink"
+            href="https://github.com/nazarioricardo/nazarioricardo/issues"
+            target="_blank"
+          >
+            github issues
+          </a>
+          .
+        </p>
+      </div>
+      <a
+        class="linkButton undefined"
+        href="/Ricardo Nazario Resume.pdf"
+      >
+        View C.V. 
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="DownloadIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"
+          />
+        </svg>
+      </a>
+    </div>
+  </section>
+</DocumentFragment>
+`;
