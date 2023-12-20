@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectImage matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="projectImage"
+  >
+    <img
+      alt="Test Image"
+      class="image false"
+      data-nimg="1"
+      decoding="async"
+      height="500"
+      loading="lazy"
+      src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fundefined%2Fundefined%2FTb9Ew8CXIwaY6R1kjMvI0uRR-2000x3000.jpg%3Fw%3D2000%26fit%3Dfill%26auto%3Dformat&w=1080&q=100"
+      srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fundefined%2Fundefined%2FTb9Ew8CXIwaY6R1kjMvI0uRR-2000x3000.jpg%3Fw%3D2000%26fit%3Dfill%26auto%3Dformat&w=640&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fundefined%2Fundefined%2FTb9Ew8CXIwaY6R1kjMvI0uRR-2000x3000.jpg%3Fw%3D2000%26fit%3Dfill%26auto%3Dformat&w=1080&q=100 2x"
+      style="color: transparent;"
+      width="500"
+    />
+  </div>
+</DocumentFragment>
+`;
