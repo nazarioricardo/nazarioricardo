@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectVideo matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="postVideo"
+  >
+    <div
+      style="border-radius: 50px; overflow: hidden; width: 640px; height: 360px;"
+    >
+      <video
+        controls=""
+        preload="auto"
+        src="https://test-video-url.com"
+        style="width: 100%; height: 100%;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
