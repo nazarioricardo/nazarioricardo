@@ -22,8 +22,6 @@ describe("LinkButton", () => {
     render(<LinkButton text="Home" Icon={Home} href="/home" />);
     const linkElement = screen.getByRole("link", { name: /Home/ });
     fireEvent.click(linkElement);
-    // Add assertion here to check that the correct page was navigated to
-    // This will depend on your routing setup and what the link is supposed to do
   });
 
   test("matches snapshot", () => {
