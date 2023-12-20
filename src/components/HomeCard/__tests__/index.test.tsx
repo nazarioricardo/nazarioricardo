@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import HomeCard from "../index"; // adjust this import according to your file structure
+import HomeCard from "../index";
 
 describe("HomeCard", () => {
   test("renders HomeCard component", () => {
@@ -24,6 +24,4 @@ describe("HomeCard", () => {
     const { asFragment } = render(<HomeCard />);
     expect(asFragment()).toMatchSnapshot();
   });
-
-  // Add more tests as needed
 });

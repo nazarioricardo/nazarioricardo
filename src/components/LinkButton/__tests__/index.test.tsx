@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import LinkButton from "../index"; // adjust this import according to your file structure
 import { Home } from "@mui/icons-material";
+import LinkButton from "../index";
 
 describe("LinkButton", () => {
   test("renders LinkButton component", () => {
@@ -30,6 +30,4 @@ describe("LinkButton", () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-
-  // Add more tests as needed
 });
