@@ -7,7 +7,7 @@ describe("ImageFadeIn", () => {
   const SRC = "/path/to/image.jpg";
   test("renders ImageFadeIn component", () => {
     render(<ImageFadeIn src={SRC} alt="Test Image" priority />);
-    const imgElement = screen.getByAltText("Test Image") as HTMLImageElement;
+    const imgElement: HTMLImageElement = screen.getByAltText("Test Image");
     expect(imgElement).toBeInTheDocument();
     expect(imgElement.src).toMatch(
       /\/_next\/image\?url=%2Fpath%2Fto%2Fimage\.jpg/
