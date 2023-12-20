@@ -7,19 +7,17 @@ import styles from "./styles.module.css";
 type ImageFadeInProps = {
   src: string | StaticImageData;
   alt: string;
-  height?: number;
-  width?: number;
   quality?: number;
   fill?: boolean;
+  priority?: boolean;
 };
 
 function ImageFadeIn({
   src,
   alt,
-  height,
-  width,
   quality = 75,
   fill = true,
+  priority = false,
 }: ImageFadeInProps) {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
   return (
@@ -29,6 +27,7 @@ function ImageFadeIn({
       fill={fill}
       alt={alt}
       quality={quality}
+      priority={priority}
       onLoad={(event: SyntheticEvent<HTMLImageElement, Event>) => {
         const { currentTarget } = event;
         event.preventDefault();

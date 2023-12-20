@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleCard matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="titleCard test-class"
+  >
+    Test Content
+  </section>
+</DocumentFragment>
+`;

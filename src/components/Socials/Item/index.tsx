@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import ImageFadeIn from "@nr/components/ImageFadeIn";
 
 type ItemProps = {
-  src: StaticImageData;
+  src: StaticImageData | string;
   link: string;
   alt: string;
 };

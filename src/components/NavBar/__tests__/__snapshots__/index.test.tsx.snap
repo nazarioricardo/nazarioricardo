@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="navBar"
+  >
+    <a
+      href="/"
+    >
+      <svg
+        height="48"
+        viewBox="0 0 384 384"
+        width="48"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <title>
+          R
+        </title>
+        <path
+          d="M132.197 384.035v-10.478c-14.802-2.769-24.415-6.922-28.838-12.46-4.889-5.853-7.333-20.861-7.333-45.027v-93.402a7.67 7.67 0 0 1 7.628-7.67l5.557-.03a22.483 22.483 0 0 1 19.685 11.398l84.73 149.532A15.98 15.98 0 0 0 227.53 384h95.958v-10.478c-19.38-2.265-34.452-15.858-42.034-22.437C273.87 344.507 265.5 336 249 304.5l-51-96c22.5-11 38.222-27.516 45.468-37.317 7.44-10.386 18.726-42.256 18.726-65.855 0-22.088-6.242-47.605-18.726-63.558-12.484-15.953-27.674-26.903-45.571-32.85C180 2.973 152.195 0 114.481 0H10.478C4.69 0 0 4.691 0 10.478c15.908 1.794 26.132 5.46 30.672 10.998 4.889 5.852 5.5 22.323 5.5 46.489v248.07c0 21.9-1.834 35.776-5.5 41.629C26.365 364.712 16.14 369.998 0 373.522V384l132.197.035Z"
+          fill="#F4F4F4"
+          fill-rule="nonzero"
+        />
+      </svg>
+    </a>
+    <ul
+      class="socials"
+    >
+      <li
+        class="socialsItem"
+      >
+        <a
+          href="https://github.com/nazarioricardo"
+          target="_blank"
+        >
+          <img
+            alt="Ricardo Nazario Github"
+            class="image false"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </a>
+      </li>
+      <li
+        class="socialsItem"
+      >
+        <a
+          href="https://www.linkedin.com/in/ricardo-nazario-857b4951/"
+          target="_blank"
+        >
+          <img
+            alt="Ricardo Nazario LinkedIn"
+            class="image false"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </a>
+      </li>
+      <li
+        class="socialsItem"
+      >
+        <a
+          href="https://www.instagram.com/ricrdo.n/"
+          target="_blank"
+        >
+          <img
+            alt="Ricardo Nazario Instagram"
+            class="image false"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
