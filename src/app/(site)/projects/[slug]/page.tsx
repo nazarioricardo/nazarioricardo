@@ -57,7 +57,7 @@ function ProjectPage() {
                 <p>{project.description}</p>
               </div>
             </TitleCard>
-
+            <div style={{ height: 24 }} />
             <PortableText
               value={project.body}
               components={{

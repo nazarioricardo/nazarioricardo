@@ -53,6 +53,10 @@
     border-radius: 50px;
   }
 
+  .content {
+    width: 100%;
+  }
+
   .imageContainer {
     padding: 0;
   }
