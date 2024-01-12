@@ -4,11 +4,19 @@
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  min-width: 33%;
-  max-width: 40%;
+  min-width: 40vw;
+  max-width: 40vw;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
+  position: fixed !important;
+  top: 0 !important;
   z-index: 9;
+}
+
+.zFill {
+  min-height: 100vh;
+  min-width: 40vw;
+  max-width: 40vw;
 }
 
 .title {
@@ -57,6 +65,8 @@
     border-radius: 50px !important;
     z-index: 0;
     animation: fadeIn 0.5s;
+    position: relative !important;
+    top: 0 !important;
   }
 
   @keyframes fadeIn {
@@ -92,5 +102,9 @@
 
   .title > h1 {
     font-size: 2rem;
+  }
+
+  .zFill {
+    display: none;
   }
 }
