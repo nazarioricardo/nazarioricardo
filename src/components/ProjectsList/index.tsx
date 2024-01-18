@@ -1,12 +1,10 @@
 import ProjectItem from "./ProjectItem";
 import { Project } from "@nr/types/Project";
+import { getProjects } from "@nr/sanity/query";
 import styles from "./styles.module.css";
 
-type ProjectsListProps = {
-  projects: Project[];
-};
-
-function ProjectList({ projects }: ProjectsListProps) {
+async function ProjectList() {
+  const projects: Project[] = await getProjects();
   return (
     <section className={styles.projectList}>
       {projects.map((project) => {
