@@ -4,13 +4,13 @@ import client from "./client";
 export async function getProjects() {
   return await client.fetch(
     groq`*[_type == "post"]{
-      _id, 
+      _id,
       title,
       subtitle,
       description,
       "slug": slug.current,
       "image": image.asset->url,
-    }`
+    }`,
   );
 }
 
@@ -24,6 +24,6 @@ export async function getSingleProject(slug: string) {
       description,
       "image": image.asset->url,
     }`,
-    { slug }
+    { slug },
   );
 }
