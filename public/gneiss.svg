@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard Copy 35</title>
+    <defs>
+        <path d="M185.751611,240.915055 L256,170.666667 L309.484945,224.151611 C313.485721,228.152387 318.911938,230.4 324.569889,230.4 L401.066667,230.4 L271.084945,100.418278 C262.75376,92.0870931 249.24624,92.0870931 240.915055,100.418278 L100.418278,240.915055 C92.0870931,249.24624 92.0870931,262.75376 100.418278,271.084945 L240.915055,411.581722 C249.24624,419.912907 262.75376,419.912907 271.084945,411.581722 L390.248389,292.418278 C398.579574,284.087093 398.579574,270.579574 390.248389,262.248389 C386.247613,258.247613 380.821396,256 375.163444,256 L204.8,256 L249.751611,300.951611 C253.752387,304.952387 259.178604,307.2 264.836556,307.2 L290.133333,307.2 L271.084945,326.248389 C262.75376,334.579574 249.24624,334.579574 240.915055,326.248389 L185.751611,271.084945 C177.420426,262.75376 177.420426,249.24624 185.751611,240.915055 Z" id="path-1"></path>
+        <filter x="-44.3%" y="-39.5%" width="189.6%" height="184.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="8" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="43" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboard-Copy-35" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#9C3143" x="0" y="0" width="512" height="512"></rect>
+        <g id="Path" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFE4B3" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
