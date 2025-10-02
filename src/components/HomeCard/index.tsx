@@ -3,6 +3,7 @@ import LinkButton from "@nr/components/LinkButton";
 import Link from "next/link";
 import styles from "./styles.module.css";
 import TitleCard from "../TitleCard";
+import Socials from "../Socials";
 
 function HomeCard() {
   return (
@@ -12,6 +13,7 @@ function HomeCard() {
           <div className={styles.title}>
             <h1 className={styles.name}>Ricardo Nazario</h1>
             <p className={styles.email}>nazarioricardo@gmail.com</p>
+            <Socials />
           </div>
 
           <p className={styles.bio}>
@@ -28,7 +30,7 @@ function HomeCard() {
         <section className={styles.bottomContent}>
           <LinkButton
             text="View C.V."
-            href="/Ricardo Nazario Resume.pdf"
+            href="/RicardoNazario_Resume.pdf"
             Icon={Download}
           />
         </section>

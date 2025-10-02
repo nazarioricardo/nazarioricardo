@@ -1,13 +1,10 @@
 .socialsItem {
   position: relative;
   list-style-type: none;
-  min-height: 75px;
-  min-width: 75px;
+  min-height: 24px;
+  min-width: 24px;
 }
 
-@media only screen and (max-width: 1170px) {
-  .socialsItem {
-    min-height: 48px;
-    min-width: 48px;
-  }
+.socialsItem:hover {
+  opacity: 0.8;
 }
