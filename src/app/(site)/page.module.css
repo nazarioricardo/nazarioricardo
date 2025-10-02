@@ -8,7 +8,6 @@
 
 @media only screen and (max-width: 1170px) {
   .content {
-    padding-top: var(--nav-bar-height);
     flex-direction: column;
     padding-left: var(--padding-horizontal);
     padding-right: var(--padding-horizontal);

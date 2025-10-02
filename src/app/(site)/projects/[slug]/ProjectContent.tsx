@@ -28,7 +28,7 @@ function ProjectContent() {
       .catch((error: Error) => {
         console.log(error);
       });
-  }, []);
+  }, [params]);
 
   return (
     <>

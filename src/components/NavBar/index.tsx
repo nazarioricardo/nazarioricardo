@@ -1,4 +1,3 @@
-import Socials from "@nr/components/Socials";
 import Link from "next/link";
 import R from "@nr/icons/R";
 import styles from "./styles.module.css";
@@ -9,8 +8,6 @@ function NavBar() {
       <Link href="/">
         <R height={48} width={48} />
       </Link>
-
-      <Socials />
     </nav>
   );
 }

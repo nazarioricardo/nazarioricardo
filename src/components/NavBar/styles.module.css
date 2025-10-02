@@ -1,39 +1,12 @@
 .navBar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: var(--nav-bar-height);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: var(--padding-horizontal);
-  padding-right: var(--padding-horizontal);
-  background-color: transparent;
-  z-index: 1;
-  gap: 48px;
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  display: none;
 }
 
 @media only screen and (max-width: 1170px) {
   .navBar {
-    height: var(--nav-bar-height);
-    padding-left: 0;
-    padding-right: 0;
+    display: flex;
     gap: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 24px;
     background-color: rgb(var(--background-rgb));
   }
 }

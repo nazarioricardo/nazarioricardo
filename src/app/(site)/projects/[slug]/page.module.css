@@ -7,24 +7,21 @@
 
 .project {
   padding: var(--page-padding);
-  padding-top: var(--nav-bar-height);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
   width: 900px;
-  animation: fadeInScroll 1s;
+  animation: fadeIn 0.3s;
 }
 
-@keyframes fadeInScroll {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(100px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -119,10 +116,6 @@
     width: 100%;
     flex-direction: column;
     gap: 12px;
-  }
-
-  .page {
-    padding-top: var(--nav-bar-height);
   }
 }
 
