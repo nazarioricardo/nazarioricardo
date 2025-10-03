@@ -4,8 +4,8 @@ import NavBar from "@nr/components/NavBar";
 import "../../globals.css";
 
 export const metadata: Metadata = {
-  title: "Ricardo Nazario",
-  description: "Ricardo's Personal Website",
+  title: "Project",
+  description: "Ricardo's Project",
 };
 
 export default function RootLayout({
