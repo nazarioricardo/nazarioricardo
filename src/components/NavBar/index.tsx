@@ -11,7 +11,7 @@ function NavBar({ isHome }: NavBarProps) {
 
   return (
     <nav className={`${styles.navBar} ${navBarDisplayStyles}`}>
-      <Link href="/">
+      <Link href="/" className={styles.r}>
         <R height={48} width={48} />
       </Link>
     </nav>

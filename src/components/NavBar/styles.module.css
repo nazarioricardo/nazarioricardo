@@ -12,6 +12,10 @@
   display: none;
 }
 
+.r:hover {
+  opacity: 0.8;
+}
+
 @media only screen and (max-width: 1170px) {
   .homeNavBar {
     display: flex;
