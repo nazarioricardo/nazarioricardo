@@ -4,7 +4,7 @@ You've reached my github page!
 
 It also happens to be the README for my personal website's repository.
 
-[https://nazarioricardo.com](https://nazarioricardo.com).
+[https://nazarioricardo.com](https://nazarioricardo.com)
 
 ## A Bit About Me.
 
