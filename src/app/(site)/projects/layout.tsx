@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import "../globals.css";
+import { jomolhari, josefinSans } from "../../fonts";
+import NavBar from "@nr/components/NavBar";
+import "../../globals.css";
 
 export const metadata: Metadata = {
   title: "Project",
@@ -11,5 +13,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <html className={`${jomolhari.variable} ${josefinSans.variable}`} lang="en">
+      <body>
+        <NavBar />
+        {children}
+      </body>
+    </html>
+  );
 }

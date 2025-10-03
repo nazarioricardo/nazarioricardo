@@ -1,5 +1,7 @@
+"use client";
+
 import Link, { LinkProps } from "next/link";
-import { HTMLProps, FC, RefAttributes } from "react";
+import { RefAttributes } from "react";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { SvgIconTypeMap } from "@mui/material";
 import styles from "./styles.module.css";
