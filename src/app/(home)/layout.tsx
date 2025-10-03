@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { jomolhari, josefinSans } from "./fonts";
+import { jomolhari, josefinSans } from "../fonts";
 import NavBar from "@nr/components/NavBar";
-import "./globals.css";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Ricardo Nazario",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html className={`${jomolhari.variable} ${josefinSans.variable}`} lang="en">
       <body>
-        <NavBar />
+        <NavBar isHome />
         {children}
       </body>
     </html>
