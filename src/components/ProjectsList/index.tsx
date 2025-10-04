@@ -9,8 +9,8 @@ async function ProjectList() {
     <section className={styles.projectList}>
       <ProjectItem
         image="/gneiss.svg"
-        title="Gneiss.Dev"
-        description="Gneiss.Dev is the home of all my future side projects! It is also potentially my future business."
+        title="Gneiss.dev (work in progress)"
+        description="Gneiss.dev is the home of all my future side projects!"
         link="https://gneiss.dev"
       />
       {projects.map((project) => {
