@@ -7,12 +7,12 @@ async function ProjectList() {
   const projects: Project[] = await getProjects();
   return (
     <section className={styles.projectList}>
-      <ProjectItem
+      {/* <ProjectItem
         image="/gneiss.svg"
         title="Gneiss.dev (work in progress)"
         description="Gneiss.dev is the home of all my future side projects!"
         link="https://gneiss.dev"
-      />
+      /> */}
       {projects.map((project) => {
         return (
           <ProjectItem
